@@ -1,4 +1,78 @@
-.App {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --font-size-base: 1.6rem;
+}
+
+html {
+  font-size: 62.5%; /* 10px */
+}
+
+body {
+  font-size: var(--font-size-base);
+  /* font-size: 1.6rem; 16px */
+}
+
+.welcome {
+  border: 1px solid lime;
+}
+
+nav > ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+li > a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Mission Carousel */
+
+.mission-carousel > .mission-carousel__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mission-carousel__list-item {
+  width: 20rem;
+  min-width: 20rem;
+  background-image: url(//unsplash.it/300/300);
+  background-size: cover;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+  border-radius: 100%;
+}
+
+.mission-carousel__link {
+  font-size: 1.4rem;
+  /* display: block; */
+}
+
+.mission-carousel__link-span:first-of-type {
+  border: 1px solid lime;
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.mission-carousel__link-span {
+  display: block;
+  text-align: center;
+}
+
+/* .App {
   text-align: center;
 }
 
@@ -29,4 +103,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */

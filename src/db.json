@@ -1,0 +1,113 @@
+{
+  "missions": [
+    {
+      "id": 1,
+      "missionNumber": "Mission 1",
+      "missionTitle": "What I need to know about the company and how we sell",
+      "coverImgURL": "https://picsum.photos/400/400",
+      "certImgURL": "https://picsum.photos/400/400",
+      "seasons": [
+        {
+          "episodes": [
+            {
+              "title": "Welcome to your role",
+              "durationMin": 8,
+              "status": "Completed"
+            },
+            {
+              "title": "Who are we?",
+              "durationMin": 18,
+              "status": "In progress"
+            },
+            {
+              "title": "Who are partners?",
+              "durationMin": 6,
+              "status": "Not Started"
+            },
+            {
+              "title": "Sales 101",
+              "durationMin": 12,
+              "status": "Not Started"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "missionNumber": "Mission 2",
+      "missionTitle": "Who are our customers and what do our conversations look like?",
+      "coverImgURL": "https://picsum.photos/400/400",
+      "certImgURL": "https://picsum.photos/400/400",
+      "seasons": [
+        {
+          "episodes": [
+            {
+              "title": "Welcome to Mission 2",
+              "durationMin": 6,
+              "status": "Completed"
+            },
+            {
+              "title": "Who are they?",
+              "durationMin": 14,
+              "status": "completed"
+            },
+            {
+              "title": "How do we talk with them?",
+              "durationMin": 9,
+              "status": "Not Started"
+            },
+            {
+              "title": "Customers 101",
+              "durationMin": 12,
+              "status": "Not Started"
+            },
+            {
+              "title": "Problem solving",
+              "durationMin": 5,
+              "status": "Not Started"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "missionNumber": "Mission 3",
+      "missionTitle": "Who are our partners",
+      "coverImgURL": "https://picsum.photos/400/400",
+      "certImgURL": "https://picsum.photos/400/400",
+      "seasons": [
+        {
+          "episodes": [
+            {
+              "title": "Welcome Mission 3",
+              "durationMin": 8,
+              "status": "Completed"
+            },
+            {
+              "title": "Who are we?",
+              "durationMin": 18,
+              "status": "In progress"
+            },
+            {
+              "title": "Who are partners?",
+              "durationMin": 6,
+              "status": "Not Started"
+            },
+            {
+              "title": "Sales 101",
+              "durationMin": 12,
+              "status": "Not Started"
+            },
+            {
+              "title": "My Role 101",
+              "durationMin": 19,
+              "status": "Not Started"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
