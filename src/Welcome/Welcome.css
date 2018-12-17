@@ -1,12 +1,22 @@
 .welcome {
-  /* border: 1px solid lime; */
+  background-color: var(--blue-dark);
+  padding: 6rem 15rem;
 }
-
 .welcome-flex {
   display: flex;
 }
 
-.welcome-flex-item {
-  flex: 1;
+.welcome__heading {
+  color: var(--white, #fff);
+  margin-bottom: 4rem;
+}
+
+.welcome__text {
+  color: var(--white, #fff);
+  padding-right: 6rem;
+  line-height: 1.6;
+}
+
+.welcome__video {
   text-align: center;
 }

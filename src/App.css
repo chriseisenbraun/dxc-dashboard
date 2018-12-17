@@ -54,8 +54,6 @@ a {
 }
 
 main {
-  width: 80%;
+  /* width: 80%; */
   margin: 0 auto;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
 }
