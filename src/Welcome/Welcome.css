@@ -1,0 +1,12 @@
+.welcome {
+  /* border: 1px solid lime; */
+}
+
+.welcome-flex {
+  display: flex;
+}
+
+.welcome-flex-item {
+  flex: 1;
+  text-align: center;
+}

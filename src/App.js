@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import './Normalize.css';
 import './App.css';
 import {BrowserRouter, Route, Router, Switch} from 'react-router-dom';
 import {Welcome} from './Welcome';
@@ -14,8 +15,7 @@ class App extends Component {
         <div className="App">
           <Nav />
 
-          <h1>H1 fom APP Component </h1>
-          <div>
+          <main>
             <Route
               exact
               path="/"
@@ -23,8 +23,8 @@ class App extends Component {
             />
             <Route path="/notebook" component={Notebook} />
             <Route path="/missons" component={Notebook} />
+            </main>
           </div>
-        </div>
       </BrowserRouter>
     );
   }

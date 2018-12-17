@@ -1,0 +1,42 @@
+/* Mission Carousel */
+
+.mission-carousel > .mission-carousel__list {
+  display: flex;
+  justify-content: space-around;
+}
+
+.mission-carousel__list-item {
+  width: 20rem;
+  min-width: 20rem;
+  background-image: url(//unsplash.it/300/300);
+  background-size: cover;
+  height: 20rem;
+  display: flex;
+  align-items: center;
+  padding: 0 5rem;
+  border-radius: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.mission-carousel__list-item:hover {
+  transform: scale(1.2);
+}
+
+.mission-carousel__link {
+  font-size: 1.4rem;
+  color: white;
+  /* display: block; */
+}
+.mission-carousel__list-item:hover .mission-carousel__link {
+  color: red;
+}
+
+.mission-carousel__link-span:first-of-type {
+  border: 1px solid lime;
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+}
+
+.mission-carousel__link-span {
+  display: block;
+  text-align: center;
+}
