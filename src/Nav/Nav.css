@@ -38,8 +38,21 @@
 }
 
 .nav-bar__button-submit {
-  display: none;
+  /* display: none;
+  border: none;
+  cursor: pointer;
+  height: none; */
 }
+
+.nav-bar__button-submit::before {
+  /* border: none;
+  content: url(/static/media/search-icon.e78105d3.svg);
+  width: 4rem;
+  display: block;
+  position: relative;
+  top: 2rem; */
+}
+
 svg.search-icon {
   fill: var(--black, #231f20);
 }
