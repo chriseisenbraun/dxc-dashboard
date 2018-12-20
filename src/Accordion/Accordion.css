@@ -1,0 +1,23 @@
+.test-arrow::after {
+  content: '>';
+  border: 1px solid red;
+  width: 2rem;
+  height: 2rem;
+  color: black;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: #fff;
+  background-color: #6f2c53;
+  border-color: #6f2c53;
+}
+
+.list-group-item::before {
+  content: '';
+  border: 2px solid red;
+  border-radius: 100%;
+  /* width: 2rem; */
+  /* height: 2rem; */
+  padding: 5px;
+}
