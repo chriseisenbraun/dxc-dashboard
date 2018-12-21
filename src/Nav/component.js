@@ -6,7 +6,7 @@ import {NavLink} from 'react-router-dom'
 export class Nav extends Component {
   render() {
     return (
-      <header>
+      <header className="container">
         <nav className="nav-bar">
           <ul className="nav-bar__list">
             <li className="nav-bar__list-item-logo">

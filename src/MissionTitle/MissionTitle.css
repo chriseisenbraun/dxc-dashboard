@@ -1,0 +1,12 @@
+.mission-title__heading {
+  color: maroon;
+  font-family: 'Oxygen-light';
+}
+
+.mission-title__heading-text {
+  font-size: 2.5rem;
+}
+
+.mission-title__text {
+  color: var(--blue-light);
+}

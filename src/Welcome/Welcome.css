@@ -1,6 +1,6 @@
 .welcome {
   background-color: var(--blue-dark);
-  padding: 6rem 15rem;
+  /* padding: 6rem 15rem; */
 }
 .welcome-flex {
   display: flex;

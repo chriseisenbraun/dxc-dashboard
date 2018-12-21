@@ -5,29 +5,35 @@ import {MissionDetail} from '../MissionDetail';
 
 export class Welcome extends Component {
   render() {
-    const {missions} = this.props;
-    return ( <> <div className="welcome">
-      <h1 className="welcome__heading">Welcome to your sales onboarding experience</h1>
-      <div className="welcome-flex">
-        <p className="welcome__text welcome-flex-item">Welcome to your online onboarding
-          experience. You will find your enablement with a click of the button below. The
-          Missions are meant to be experienced in order, and are filled with brief and
-          relevant information in a variety of formats. You will then go back to doing
-          your job until you are ready to return for more of the experience. We hope this
-          path is helpful for you to have some quick success in your role!</p>
-        <div className="welcome__video welcome-flex-item">
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/DdSBxX3Gmjo"
-            frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+
+    return (
+      <div class="container-fluid welcome">
+        <div className="container py-5">
+          <div class="row">
+            <div class="col-sm">
+              <h1 className="welcome__heading">Welcome to your sales onboarding experience</h1>
+              <p className="welcome__text">Welcome to your online onboarding
+                experience. You will find your enablement with a click of the button below. The
+                Missions are meant to be experienced in order, and are filled with brief and
+                relevant information in a variety of formats. You will then go back to doing
+                your job until you are ready to return for more of the experience. We hope this
+                path is helpful for you to have some quick success in your role!</p>
+            </div>
+            <div class="col-sm">
+              <div className="welcome__video">
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/DdSBxX3Gmjo"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <MissionCarousel missions = {missions} /> <MissionDetail missions={missions}/>
-    </>
     )
   }
 }

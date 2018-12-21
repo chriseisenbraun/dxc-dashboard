@@ -1,7 +1,7 @@
 .nav-bar {
   background-color: var(--white, #fff);
-  border-bottom: 3px solid var(--black, #231f20);
-  padding: 1rem 15rem;
+  /* border-bottom: 3px solid var(--black, #231f20); */
+  padding: 1rem 0rem;
 }
 
 .nav-bar__list {
@@ -19,7 +19,8 @@
 }
 
 .nav-bar__link:hover {
-  color: var(--blue-medium, #1c6176);
+  color: var(--blue-light, #3483aa);
+  text-decoration: none;
 }
 
 .nav-bar__list-item-logo {
@@ -57,5 +58,5 @@ svg.search-icon {
   fill: var(--black, #231f20);
 }
 svg.search-icon:hover {
-  fill: var(--blue-medium: #1c6176);
+  fill: var(--blue-light, #3483aa);
 }

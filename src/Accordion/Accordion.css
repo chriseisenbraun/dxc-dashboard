@@ -1,9 +1,23 @@
+.accordion-wrap {
+  padding-bottom: 10rem;
+}
+
 .test-arrow::after {
   content: '>';
   border: 1px solid red;
   width: 2rem;
   height: 2rem;
   color: black;
+}
+
+.test-text-link {
+  color: maroon;
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+.test-text-link:hover {
+  color: maroon;
 }
 
 .list-group-item.active {
@@ -14,10 +28,15 @@
 }
 
 .list-group-item::before {
-  content: '';
+  /* content: '';
   border: 2px solid red;
   border-radius: 100%;
-  /* width: 2rem; */
-  /* height: 2rem; */
-  padding: 5px;
+  width: 2rem;
+  height: 2rem;
+  padding: 5px; */
+}
+
+/* BS4 override */
+.card-header {
+  border-bottom: 0;
 }
