@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import './Normalize.css';
+import React, {Component} from 'react'
 import './App.css';
 import {BrowserRouter, Route, Router, Switch} from 'react-router-dom';
 import {Welcome} from './Welcome';
