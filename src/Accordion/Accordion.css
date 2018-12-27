@@ -62,3 +62,11 @@
 .list-group-item {
   /* padding-left: 3rem; */
 }
+
+.test-status-text {
+  color: red !important;
+}
+
+.completed-svg {
+  stroke: #2e8c5a;
+}
