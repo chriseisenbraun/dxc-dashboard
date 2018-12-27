@@ -1,13 +1,13 @@
 .accordion-wrap {
-  padding-bottom: 10rem;
+  /* padding-bottom: 10rem; */
 }
 
 .test-arrow::after {
-  content: '>';
+  /* content: '>';
   border: 1px solid red;
   width: 2rem;
   height: 2rem;
-  color: black;
+  color: black; */
 }
 
 .test-text-link {
@@ -39,4 +39,9 @@
 /* BS4 override */
 .card-header {
   border-bottom: 0;
+}
+.ep-text-button {
+  font-size: 1.6rem;
+  padding: 0;
+  color: maroon;
 }
