@@ -51,13 +51,50 @@ export class Accordion extends Component {
                       <div class="row">
                         <div class="col-sm col-md-4">
                           <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-m1-e1-list" data-toggle="list" href="#list-m1-e1" role="tab" aria-controls="home">Expectations of me week 1</a>
-                            <a class="list-group-item list-group-item-action" id="list-m1-e2-list" data-toggle="list" href="#list-m1-e2" role="tab" aria-controls="profile">How will I spend my time?</a>
-                            <a class="list-group-item list-group-item-action" id="list-m1-e3-list" data-toggle="list" href="#list-m1-e3" role="tab" aria-controls="messages">What does this onboarding look like</a>
-                            <a class="list-group-item list-group-item-action" id="list-m1-e4-list" data-toggle="list" href="#list-m1-e4" role="tab" aria-controls="settings">Where do I go for help?</a>
-                            <a class="list-group-item list-group-item-action" id="list-m1-e5-list" data-toggle="list" href="#list-m1-e5" role="tab" aria-controls="settings">Access I need</a>
-                            <a class="list-group-item list-group-item-action" id="list-m1-e6-list" data-toggle="list" href="#list-m1-e6" role="tab" aria-controls="settings">Who are the people I need to know?</a>
-                            <a class="list-group-item list-group-item-action" id="list-m1-e7-list" data-toggle="list" href="#list-m1-e7" role="tab" aria-controls="settings">What do I do first?</a>
+
+                            <a class="list-group-item list-group-item-action active" id="list-m1-e1-list" data-toggle="list" href="#list-m1-e1" role="tab" aria-controls="home"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Expectations of me week 1</a>
+
+                            <a class="list-group-item list-group-item-action" id="list-m1-e2-list" data-toggle="list" href="#list-m1-e2" role="tab" aria-controls="profile"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>How will I spend my time?</a>
+                            <a class="list-group-item list-group-item-action" id="list-m1-e3-list" data-toggle="list" href="#list-m1-e3" role="tab" aria-controls="messages"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>What does this onboarding look like</a>
+                            <a class="list-group-item list-group-item-action" id="list-m1-e4-list" data-toggle="list" href="#list-m1-e4" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Where do I go for help?</a>
+                            <a class="list-group-item list-group-item-action" id="list-m1-e5-list" data-toggle="list" href="#list-m1-e5" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Access I need</a>
+                            <a class="list-group-item list-group-item-action" id="list-m1-e6-list" data-toggle="list" href="#list-m1-e6" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Who are the people I need to know?</a>
+                            <a class="list-group-item list-group-item-action" id="list-m1-e7-list" data-toggle="list" href="#list-m1-e7" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>What do I do first?</a>
 
                           </div>
                         </div>
@@ -92,9 +129,9 @@ export class Accordion extends Component {
                   <div className="col"><span><button
                     className="btn btn-link ep-text-button"
                     data-toggle="collapse"
-                    data-target="#collapseOne"
+                    data-target="#collapseTwo"
                     aria-expanded="true"
-                    aria-controls="collapseOne">
+                    aria-controls="collapseTwo">
                     Who are we?
                 </button>
                   </span></div>
@@ -120,13 +157,48 @@ export class Accordion extends Component {
                       <div class="row">
                         <div class="col-sm col-md-4">
                           <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-m2-e1-list" data-toggle="list" href="#list-m2-e1" role="tab" aria-controls="home">Expectations of me week 1</a>
-                            <a class="list-group-item list-group-item-action" id="list-m2-e2-list" data-toggle="list" href="#list-m2-e2" role="tab" aria-controls="profile">How will I spend my time?</a>
-                            <a class="list-group-item list-group-item-action" id="list-m2-e3-list" data-toggle="list" href="#list-m2-e3" role="tab" aria-controls="messages">What does this onboarding look like</a>
-                            <a class="list-group-item list-group-item-action" id="list-m2-e4-list" data-toggle="list" href="#list-m2-e4" role="tab" aria-controls="settings">Where do I go for help?</a>
-                            <a class="list-group-item list-group-item-action" id="list-m2-e5-list" data-toggle="list" href="#list-m2-e5" role="tab" aria-controls="settings">Access I need</a>
-                            <a class="list-group-item list-group-item-action" id="list-m2-e6-list" data-toggle="list" href="#list-m2-e6" role="tab" aria-controls="settings">Who are the people I need to know?</a>
-                            <a class="list-group-item list-group-item-action" id="list-m2-e7-list" data-toggle="list" href="#list-m2-e7" role="tab" aria-controls="settings">What do I do first?</a>
+                            <a class="list-group-item list-group-item-action active" id="list-m2-e1-list" data-toggle="list" href="#list-m2-e1" role="tab" aria-controls="home"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Expectations of me week 1</a>
+                            <a class="list-group-item list-group-item-action" id="list-m2-e2-list" data-toggle="list" href="#list-m2-e2" role="tab" aria-controls="profile"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>How will I spend my time?</a>
+                            <a class="list-group-item list-group-item-action" id="list-m2-e3-list" data-toggle="list" href="#list-m2-e3" role="tab" aria-controls="messages"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>What does this onboarding look like</a>
+                            <a class="list-group-item list-group-item-action" id="list-m2-e4-list" data-toggle="list" href="#list-m2-e4" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Where do I go for help?</a>
+                            <a class="list-group-item list-group-item-action" id="list-m2-e5-list" data-toggle="list" href="#list-m2-e5" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Access I need</a>
+                            <a class="list-group-item list-group-item-action" id="list-m2-e6-list" data-toggle="list" href="#list-m2-e6" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Who are the people I need to know?</a>
+                            <a class="list-group-item list-group-item-action" id="list-m2-e7-list" data-toggle="list" href="#list-m2-e7" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>What do I do first?</a>
 
                           </div>
                         </div>
@@ -168,7 +240,7 @@ export class Accordion extends Component {
                 </button>
                   </span></div>
                   <div className="col"><span>6 Min</span></div>
-                  <div className="col"><span>Not Started  </span></div>
+                  <div className="col"><span>Not Started</span></div>
 
                 </div>
               </div>
@@ -189,13 +261,48 @@ export class Accordion extends Component {
                       <div class="row">
                         <div class="col-sm col-md-4">
                           <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-m3-e1-list" data-toggle="list" href="#list-m3-e1" role="tab" aria-controls="home">Expectations of me week 1</a>
-                            <a class="list-group-item list-group-item-action" id="list-m3-e2-list" data-toggle="list" href="#list-m3-e2" role="tab" aria-controls="profile">How will I spend my time?</a>
-                            <a class="list-group-item list-group-item-action" id="list-m3-e3-list" data-toggle="list" href="#list-m3-e3" role="tab" aria-controls="messages">What does this onboarding look like</a>
-                            <a class="list-group-item list-group-item-action" id="list-m3-e4-list" data-toggle="list" href="#list-m3-e4" role="tab" aria-controls="settings">Where do I go for help?</a>
-                            <a class="list-group-item list-group-item-action" id="list-m3-e5-list" data-toggle="list" href="#list-m3-e5" role="tab" aria-controls="settings">Access I need</a>
-                            <a class="list-group-item list-group-item-action" id="list-m3-e6-list" data-toggle="list" href="#list-m3-e6" role="tab" aria-controls="settings">Who are the people I need to know?</a>
-                            <a class="list-group-item list-group-item-action" id="list-m3-e7-list" data-toggle="list" href="#list-m3-e7" role="tab" aria-controls="settings">What do I do first?</a>
+                            <a class="list-group-item list-group-item-action active" id="list-m3-e1-list" data-toggle="list" href="#list-m3-e1" role="tab" aria-controls="home"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Expectations of me week 2</a>
+                            <a class="list-group-item list-group-item-action" id="list-m3-e2-list" data-toggle="list" href="#list-m3-e2" role="tab" aria-controls="profile"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>How will I spend my time?</a>
+                            <a class="list-group-item list-group-item-action" id="list-m3-e3-list" data-toggle="list" href="#list-m3-e3" role="tab" aria-controls="messages"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>What does this onboarding look like</a>
+                            <a class="list-group-item list-group-item-action" id="list-m3-e4-list" data-toggle="list" href="#list-m3-e4" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Where do I go for help?</a>
+                            <a class="list-group-item list-group-item-action" id="list-m3-e5-list" data-toggle="list" href="#list-m3-e5" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Access I need</a>
+                            <a class="list-group-item list-group-item-action" id="list-m3-e6-list" data-toggle="list" href="#list-m3-e6" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Who are the people I need to know?</a>
+                            <a class="list-group-item list-group-item-action" id="list-m3-e7-list" data-toggle="list" href="#list-m3-e7" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>What do I do first?</a>
 
                           </div>
                         </div>
@@ -226,7 +333,8 @@ export class Accordion extends Component {
           <div className="card">
             <div className="card-header" id="headingFour">
               <div className="container">
-                <div className="row"><div className="col"><span><button
+                <div className="row">
+                <div className="col"><span><button
                   className="btn btn-link ep-text-button"
                   data-toggle="collapse"
                   data-target="#collapseFour"
@@ -236,22 +344,12 @@ export class Accordion extends Component {
                 </button>
                 </span></div>
                   <div className="col"><span>6 Min</span></div>
-                  <div className="col"><span>Not Started  </span></div>
+                  <div className="col"><span>Not Started</span></div>
 
               </div>
               </div>
             </div>
-            <div className="col"><span><button
-              className="btn btn-link ep-text-button"
-              data-toggle="collapse"
-              data-target="#collapseFour"
-              aria-expanded="true"
-              aria-controls="collapseFour">
-              Sales 101
-                </button>
-            </span></div>
-            <div className="col"><span>8 Min</span></div>
-            <div className="col"><span>Not Started  </span></div>
+
 
             <div
               id="collapseFour"
@@ -268,13 +366,48 @@ export class Accordion extends Component {
                       <div class="row">
                         <div class="col-sm col-md-4">
                           <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-m4-e1-list" data-toggle="list" href="#list-m4-e1" role="tab" aria-controls="home">Expectations of me week 1</a>
-                            <a class="list-group-item list-group-item-action" id="list-m4-e2-list" data-toggle="list" href="#list-m4-e2" role="tab" aria-controls="profile">How will I spend my time?</a>
-                            <a class="list-group-item list-group-item-action" id="list-m4-e3-list" data-toggle="list" href="#list-m4-e3" role="tab" aria-controls="messages">What does this onboarding look like</a>
-                            <a class="list-group-item list-group-item-action" id="list-m4-e4-list" data-toggle="list" href="#list-m4-e4" role="tab" aria-controls="settings">Where do I go for help?</a>
-                            <a class="list-group-item list-group-item-action" id="list-m4-e5-list" data-toggle="list" href="#list-m4-e5" role="tab" aria-controls="settings">Access I need</a>
-                            <a class="list-group-item list-group-item-action" id="list-m4-e6-list" data-toggle="list" href="#list-m4-e6" role="tab" aria-controls="settings">Who are the people I need to know?</a>
-                            <a class="list-group-item list-group-item-action" id="list-m4-e7-list" data-toggle="list" href="#list-m4-e7" role="tab" aria-controls="settings">What do I do first?</a>
+                            <a class="list-group-item list-group-item-action active" id="list-m4-e1-list" data-toggle="list" href="#list-m4-e1" role="tab" aria-controls="home"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Expectations of me week 4</a>
+                            <a class="list-group-item list-group-item-action" id="list-m4-e2-list" data-toggle="list" href="#list-m4-e2" role="tab" aria-controls="profile"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>How will I spend my time?</a>
+                            <a class="list-group-item list-group-item-action" id="list-m4-e3-list" data-toggle="list" href="#list-m4-e3" role="tab" aria-controls="messages"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>What does this onboarding look like</a>
+                            <a class="list-group-item list-group-item-action" id="list-m4-e4-list" data-toggle="list" href="#list-m4-e4" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Where do I go for help?</a>
+                            <a class="list-group-item list-group-item-action" id="list-m4-e5-list" data-toggle="list" href="#list-m4-e5" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Access I need</a>
+                            <a class="list-group-item list-group-item-action" id="list-m4-e6-list" data-toggle="list" href="#list-m4-e6" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Who are the people I need to know?</a>
+                            <a class="list-group-item list-group-item-action" id="list-m4-e7-list" data-toggle="list" href="#list-m4-e7" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>What do I do first?</a>
 
                           </div>
                         </div>
@@ -336,13 +469,48 @@ export class Accordion extends Component {
                       <div class="row">
                         <div class="col-sm col-md-4">
                           <div class="list-group" id="list-tab" role="tablist">
-                            <a class="list-group-item list-group-item-action active" id="list-m5-e1-list" data-toggle="list" href="#list-m5-e1" role="tab" aria-controls="home">Expectations of me week 1</a>
-                            <a class="list-group-item list-group-item-action" id="list-m5-e2-list" data-toggle="list" href="#list-m5-e2" role="tab" aria-controls="profile">How will I spend my time?</a>
-                            <a class="list-group-item list-group-item-action" id="list-m5-e3-list" data-toggle="list" href="#list-m5-e3" role="tab" aria-controls="messages">What does this onboarding look like</a>
-                            <a class="list-group-item list-group-item-action" id="list-m5-e4-list" data-toggle="list" href="#list-m5-e4" role="tab" aria-controls="settings">Where do I go for help?</a>
-                            <a class="list-group-item list-group-item-action" id="list-m5-e5-list" data-toggle="list" href="#list-m5-e5" role="tab" aria-controls="settings">Access I need</a>
-                            <a class="list-group-item list-group-item-action" id="list-m5-e6-list" data-toggle="list" href="#list-m5-e6" role="tab" aria-controls="settings">Who are the people I need to know?</a>
-                            <a class="list-group-item list-group-item-action" id="list-m5-e7-list" data-toggle="list" href="#list-m5-e7" role="tab" aria-controls="settings">What do I do first?</a>
+                            <a class="list-group-item list-group-item-action active" id="list-m5-e1-list" data-toggle="list" href="#list-m5-e1" role="tab" aria-controls="home"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Expectations of me week 5</a>
+                            <a class="list-group-item list-group-item-action" id="list-m5-e2-list" data-toggle="list" href="#list-m5-e2" role="tab" aria-controls="profile"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>How will I spend my time?</a>
+                            <a class="list-group-item list-group-item-action" id="list-m5-e3-list" data-toggle="list" href="#list-m5-e3" role="tab" aria-controls="messages"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>What does this onboarding look like</a>
+                            <a class="list-group-item list-group-item-action" id="list-m5-e4-list" data-toggle="list" href="#list-m5-e4" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Where do I go for help?</a>
+                            <a class="list-group-item list-group-item-action" id="list-m5-e5-list" data-toggle="list" href="#list-m5-e5" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Access I need</a>
+                            <a class="list-group-item list-group-item-action" id="list-m5-e6-list" data-toggle="list" href="#list-m5-e6" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>Who are the people I need to know?</a>
+                            <a class="list-group-item list-group-item-action" id="list-m5-e7-list" data-toggle="list" href="#list-m5-e7" role="tab" aria-controls="settings"><span className="ep-todo-span" ><svg className="ep-todo-svg" version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 130.2 130.2">
+		<circle className="path circle" fill="none" stroke="#000" stroke-width="6" stroke-miterlimit="10" cx="65.1" cy="65.1" r="62.1"
+		/>
+		<polyline className="path check" fill="none" stroke="#73AF55" stroke-width="6" stroke-linecap="round" stroke-miterlimit="10"
+		 points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+	</svg></span>What do I do first?</a>
 
                           </div>
                         </div>

@@ -40,8 +40,25 @@
 .card-header {
   border-bottom: 0;
 }
+
+/* SVG Circle and Checkmark */
 .ep-text-button {
   font-size: 1.6rem;
   padding: 0;
   color: maroon;
+}
+
+.ep-todo-svg {
+  width: 1.5rem;
+  display: inline-block;
+}
+
+.ep-todo-span {
+  margin-right: .5rem;
+  position: relative;
+  top: 3px;
+}
+
+.list-group-item {
+  /* padding-left: 3rem; */
 }
