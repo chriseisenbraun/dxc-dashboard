@@ -9,6 +9,7 @@ import {Accordion} from './Accordion';
 import json from './db.json';
 import {MissionTitle} from './MissionTitle';
 import {Checkpoint} from './Checkpoint';
+import {Footer} from './Footer';
 
 class App extends Component {
   render() {
@@ -30,8 +31,9 @@ class App extends Component {
             <MissionTitle />
             <Accordion />
             <Checkpoint />
-
+            <Footer />
             </main>
+
           </div>
       </BrowserRouter>
     );
