@@ -8,6 +8,7 @@ import {Notebook} from './Notebook';
 import {Accordion} from './Accordion';
 import json from './db.json';
 import {MissionTitle} from './MissionTitle';
+import {Checkpoint} from './Checkpoint';
 
 class App extends Component {
   render() {
@@ -28,6 +29,8 @@ class App extends Component {
             <MissionCarousel />
             <MissionTitle />
             <Accordion />
+            <Checkpoint />
+
             </main>
           </div>
       </BrowserRouter>
