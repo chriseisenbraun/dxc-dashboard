@@ -23,7 +23,7 @@ export class Nav extends Component {
           </button>
 
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
+            <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
                 <NavLink to="/missions" className="nav-link" href="#">
                   Missions
@@ -47,10 +47,11 @@ export class Nav extends Component {
               </li>
             </ul>
             <form className="form-inline my-2 my-lg-0">
+            <button className="btn text-hide" type="submit">
             <div className="search-icon-wrap">
              <svg className="search-icon" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M44 25.5C44 35.717 35.717 44 25.5 44S7 35.717 7 25.5 15.283 7 25.5 7 44 15.283 44 25.5zm-.976 18.524A25.419 25.419 0 0 1 25.5 51C11.417 51 0 39.583 0 25.5S11.417 0 25.5 0 51 11.417 51 25.5c0 5.127-1.513 9.9-4.117 13.898l19.36 19.36L62 63 43.024 44.024z"/></svg>
               </div>
-              <button className="btn btn-outline-success my-2 my-sm-0" type="submit">
+
                 Search
               </button>
               <input
