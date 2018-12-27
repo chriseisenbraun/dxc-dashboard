@@ -9,29 +9,30 @@ export class Accordion extends Component {
       <div className="container accordion-wrap">
         <div id="accordion">
         <div className="container">
-            <div className="row d-flex justify-content-between">
-              <span>Episode name</span>
-              <span>Episode length</span>
-              <span>Status</span>
+            <div className="row">
+              <div className="col"><span>Episode name</span></div>
+              <div className="col"><span>Episode length</span></div>
+              <div className="col"><span>Status</span></div>
             </div>
         </div>
 
           <div className="card">
             <div className="card-header" id="headingOne">
-              <div className="d-flex justify-content-between">
-
-              <span>Welcome to your role</span>
-              <span>8 Min</span>
-              <span>Not Started</span>
-              <span><button
-                  className="btn btn-link test-arrow"
-                  data-toggle="collapse"
-                  data-target="#collapseOne"
-                  aria-expanded="true"
-                  aria-controls="collapseOne">
-                  >
+              <div className="container">
+              <div className="row">
+                  <div className="col"><span><button
+                    className="btn btn-link ep-text-button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne">
+                    Welcome to your role
                 </button>
-                </span>
+                  </span></div>
+                  <div className="col"><span>8 Min</span></div>
+                  <div className="col"><span>Not Started</span></div>
+
+              </div>
               </div>
             </div>
 
@@ -44,6 +45,7 @@ export class Accordion extends Component {
                 <div class="container-fluid">
                   <div class="row">
                     <div class="col-sm">
+                     <p>Mission 1 / Ep 1: Welcome to your role</p>
                       <h3>Welcome to your role</h3>
 
                       <div class="row">
@@ -85,20 +87,21 @@ export class Accordion extends Component {
 
           <div className="card">
             <div className="card-header" id="headingTwo">
-              <div className="d-flex justify-content-between">
-
-                <span>Who are we?</span>
-                <span>8 Min</span>
-                <span>Not Started</span>
-                <span><button
-                  className="btn btn-link test-arrow"
-                  data-toggle="collapse"
-                  data-target="#collapseTwo"
-                  aria-expanded="true"
-                  aria-controls="collapseTwo">
-                 >
+              <div className="container">
+                <div className="row">
+                  <div className="col"><span><button
+                    className="btn btn-link ep-text-button"
+                    data-toggle="collapse"
+                    data-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne">
+                    Who are we?
                 </button>
-                </span>
+                  </span></div>
+                  <div className="col"><span>18 Min</span></div>
+                  <div className="col"><span>In progress  </span></div>
+
+                </div>
               </div>
             </div>
 
@@ -111,6 +114,7 @@ export class Accordion extends Component {
                 <div class="container-fluid">
                   <div class="row">
                     <div class="col-sm">
+                      <p>Mission 1 / Ep 2: Who are we?</p>
                       <h3>Who are we?</h3>
 
                       <div class="row">
@@ -152,20 +156,21 @@ export class Accordion extends Component {
 
           <div className="card">
             <div className="card-header" id="headingThree">
-              <div className="d-flex justify-content-between">
-
-                <span>Who are our partners ?</span>
-                <span>6 Min</span>
-                <span>Not Started</span>
-                <span><button
-                  className="btn btn-link test-arrow"
-                  data-toggle="collapse"
-                  data-target="#collapseThree"
-                  aria-expanded="true"
-                  aria-controls="collapseThree">
-                  >
+              <div className="container">
+              <div className="row">
+                  <div className="col"><span><button
+                    className="btn btn-link ep-text-button"
+                    data-toggle="collapse"
+                    data-target="#collapseThree"
+                    aria-expanded="true"
+                    aria-controls="collapseThree">
+                    Who are our partners ?
                 </button>
-                </span>
+                  </span></div>
+                  <div className="col"><span>6 Min</span></div>
+                  <div className="col"><span>Not Started  </span></div>
+
+                </div>
               </div>
             </div>
 
@@ -178,7 +183,8 @@ export class Accordion extends Component {
                 <div class="container-fluid">
                   <div class="row">
                     <div class="col-sm">
-                      <h3>Who are our partners ?</h3>
+                      <p>Mission 1 / Ep 3: Who are our partners?</p>
+                      <h3>Who are our partners?</h3>
 
                       <div class="row">
                         <div class="col-sm col-md-4">
@@ -219,22 +225,33 @@ export class Accordion extends Component {
 
           <div className="card">
             <div className="card-header" id="headingFour">
-              <div className="d-flex justify-content-between">
-
-                <span>Sales 101</span>
-                <span>6 Min</span>
-                <span>Not Started</span>
-                <span><button
-                  className="btn btn-link test-arrow"
+              <div className="container">
+                <div className="row"><div className="col"><span><button
+                  className="btn btn-link ep-text-button"
                   data-toggle="collapse"
                   data-target="#collapseFour"
                   aria-expanded="true"
                   aria-controls="collapseFour">
-                  >
+                  Sales 101
                 </button>
-                </span>
+                </span></div>
+                  <div className="col"><span>6 Min</span></div>
+                  <div className="col"><span>Not Started  </span></div>
+
+              </div>
               </div>
             </div>
+            <div className="col"><span><button
+              className="btn btn-link ep-text-button"
+              data-toggle="collapse"
+              data-target="#collapseFour"
+              aria-expanded="true"
+              aria-controls="collapseFour">
+              Sales 101
+                </button>
+            </span></div>
+            <div className="col"><span>8 Min</span></div>
+            <div className="col"><span>Not Started  </span></div>
 
             <div
               id="collapseFour"
@@ -245,6 +262,7 @@ export class Accordion extends Component {
                 <div class="container-fluid">
                   <div class="row">
                     <div class="col-sm">
+                      <p>Mission 1 / Ep 4: Sales 101</p>
                       <h3>Sales 101</h3>
 
                       <div class="row">
@@ -286,20 +304,20 @@ export class Accordion extends Component {
 
           <div className="card">
             <div className="card-header" id="headingFive">
-              <div className="d-flex justify-content-between">
-
-                <span>My Role 101</span>
-                <span>8 Min</span>
-                <span>Not Started</span>
-                <span><button
-                  className="btn btn-link test-arrow"
-                  data-toggle="collapse"
-                  data-target="#collapseFive"
-                  aria-expanded="true"
-                  aria-controls="collapseFive">
-                  >
+              <div className="container">
+              <div className="row">
+                  <div className="col"><span><button
+                    className="btn btn-link ep-text-button"
+                    data-toggle="collapse"
+                    data-target="#collapseFive"
+                    aria-expanded="true"
+                    aria-controls="collapseFive">
+                    My Role 101
                 </button>
-                </span>
+                  </span></div>
+                  <div className="col"><span>18 Min</span></div>
+                  <div className="col"><span>Not Started  </span></div>
+                </div>
               </div>
             </div>
 
@@ -312,6 +330,7 @@ export class Accordion extends Component {
                 <div class="container-fluid">
                   <div class="row">
                     <div class="col-sm">
+                      <p>Mission 1 / Ep 5: my Role 101</p>
                       <h3>My Role 101</h3>
 
                       <div class="row">
