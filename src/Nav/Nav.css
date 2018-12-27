@@ -28,6 +28,10 @@
   margin-right: auto;
 }
 
+.nav-bar__logo-img {
+  width: 10rem;
+}
+
 .nav-bar__form {
   display: flex;
   align-items: center;
