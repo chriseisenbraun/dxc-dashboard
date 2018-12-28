@@ -1,24 +1,17 @@
 /* Mission Carousel */
 
-/* .mission-carousel > .mission-carousel__list {
-  display: flex;
-  justify-content: space-around;
-} */
 .mission-carousel {
   padding: 9rem 0;
 }
 .mission-carousel__list-item {
-  width: 18rem;
-  min-width: 18rem;
-  height: 18rem;
-  /* background-image: url(//unsplash.it/400/400); */
+  width: 19rem;
+  min-width: 19rem;
+  height: 19rem;
   background-size: cover;
   display: flex;
   align-items: center;
-  /* padding: 0 5rem; */
   border-radius: 100%;
   transition: all 0.2s ease-in-out;
-  /* background-color: teal; */
 }
 
 .mission-carousel__list-item:nth-child(1) {
@@ -44,25 +37,22 @@
 
 .mission-carousel__link {
   font-size: 1.4rem;
-  color: white;
+  color: var(--white, #fff);
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* flex-basis: 100%; */
   height: 100%;
   width: 100%;
-  border: 1px solid black;
   overflow: hidden;
   border-radius: 100%;
   overflow: hidden;
   justify-content: center;
   opacity: 0.8;
-  background-color: #598898;
+  background-color: var(--blue-medium, #1c6176);
 }
 
 .mission-carousel__link:hover {
-  opacity: 0.9;
-  background: #8f647d;
+  opacity: 0.8;
+  background: var(--maroon, #6f2d53);
 }
 
 .mission-carousel__list-item:hover .mission-carousel__link {
@@ -71,15 +61,17 @@
 }
 
 .mission-carousel__link-span:first-of-type {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding-bottom: 1rem;
   font-size: 1.4rem;
+  font-weight: 100;
 }
 
 .mission-carousel__link-span {
   /* display: block; */
   text-align: center;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
   line-height: 1.3;
+  font-weight: 900;
 }

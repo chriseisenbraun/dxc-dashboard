@@ -1,23 +1,5 @@
 .accordion-wrap {
-  /* padding-bottom: 10rem; */
-}
-
-.test-arrow::after {
-  /* content: '>';
-  border: 1px solid red;
-  width: 2rem;
-  height: 2rem;
-  color: black; */
-}
-
-.test-text-link {
-  color: maroon;
-  padding: 0;
-  font-size: 1.6rem;
-}
-
-.test-text-link:hover {
-  color: maroon;
+  /* padding-bottom: 4rem; */
 }
 
 .list-group-item.active {
@@ -27,25 +9,42 @@
   border-color: #6f2c53;
 }
 
-.list-group-item::before {
-  /* content: '';
-  border: 2px solid red;
-  border-radius: 100%;
-  width: 2rem;
-  height: 2rem;
-  padding: 5px; */
+.ep-todo-span {
+  margin-right: 0.5rem;
+  position: relative;
+  top: 3px;
 }
 
-/* BS4 override */
-.card-header {
-  border-bottom: 0;
+.ep-accordion-heading {
+  color: var(--blue-light, #3483aa);
+  font-size: 1.3rem;
+}
+.mission-breadcrumb {
+  color: var(--blue-light, #3483aa);
+  font-size: 1rem;
+  font-weight: 900;
+  padding-bottom: 2rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  padding-top: 1rem;
+  margin-top: 1rem;
 }
 
 /* SVG Circle and Checkmark */
+
 .ep-text-button {
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   padding: 0;
-  color: maroon;
+  color: var(--maroon, #6f2d53);
+  font-weight: 900;
+}
+
+.ep-text-status,
+.ep-text-time {
+  font-size: 1.2rem;
+}
+
+.ep-text-button:hover {
+  color: var(--maroon, #6f2d53);
 }
 
 .ep-todo-svg {
@@ -53,20 +52,15 @@
   display: inline-block;
 }
 
-.ep-todo-span {
-  margin-right: .5rem;
-  position: relative;
-  top: 3px;
-}
-
-.list-group-item {
-  /* padding-left: 3rem; */
-}
-
-.test-status-text {
-  color: red !important;
-}
-
 .completed-svg {
-  stroke: #2e8c5a;
+  stroke: var(--green, #2e8c5a);
+}
+
+/* BS4 override */
+.card-header {
+  border-bottom: 0;
+}
+
+.card {
+  border-radius: none;
 }

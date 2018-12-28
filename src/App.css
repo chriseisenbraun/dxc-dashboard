@@ -1,12 +1,22 @@
 :root {
   --font-size-base: 1.6rem;
-  --blue-dark: #1e415e;
-  --blue-medium: #1c6176;
+  --slate: #607a96;
   --blue-light: #3483aa;
-  --gray: #55565a;
-  --black: #231f20;
+  --blue-medium: #1c6176;
+  --blue-dark: #1e415e;
+  --purple: #493280;
+
   --white: #fff;
+  --gray: #55565a;
+
+  --black: #231f20;
+
   --green: #2e8c5a;
+  --green-dark: #00695e;
+
+  --orange: #d2642f;
+  --red: #972f1b;
+  --maroon: #6f2d53;
 }
 
 /* Fonts */

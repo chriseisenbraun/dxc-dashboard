@@ -8,7 +8,7 @@ export class MissionTitle extends Component {
         <div className="row">
           <div className="col">
             <h2 className="mission-title__heading">Mission 1</h2>
-            <h3 className="mission-title__heading-text">What I need to know about the company and how we sell</h3>
+            <h3 className="mission-title__heading-text mb-5">What I need to know about the company and how we sell</h3>
             <p className="mission-title__text">Complete these episodes:</p>
           </div>
         </div>
