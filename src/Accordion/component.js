@@ -10,12 +10,12 @@ export class Accordion extends Component {
       <div className="container accordion-wrap mb-5">
         <div id="accordion">
 
-          <AccordionHeader />
+          <AccordionHeader name="Episode name" length="Episode length" status="Status" />
 
           <div className="card">
             <div className="card-header" id="headingOne">
               <div className="container">
-                <div className="row">
+                 <div className="row">
                   <div className="col-6">
                     <span>
                       <button
