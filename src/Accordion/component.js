@@ -1,6 +1,7 @@
 import React, {Component} from "react";
-import {Link, NavLink} from "react-router-dom";
 import './Accordion.css'
+
+import { AccordionHeader } from "../AccordionHeader";
 
 export class Accordion extends Component {
   render() {
@@ -8,19 +9,8 @@ export class Accordion extends Component {
     return (
       <div className="container accordion-wrap mb-5">
         <div id="accordion">
-          <div className="container mb-3">
-            <div className="row">
-              <div className="col-6">
-                <span className="ep-accordion-heading pl-4">Episode name</span>
-              </div>
-              <div className="col">
-                <span className="ep-accordion-heading">Episode length</span>
-              </div>
-              <div className="col">
-                <span className="ep-accordion-heading">Status</span>
-              </div>
-            </div>
-          </div>
+
+          <AccordionHeader />
 
           <div className="card">
             <div className="card-header" id="headingOne">
