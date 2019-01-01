@@ -317,6 +317,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m1-e1-list">
                               <iframe
+                                title="list-m1-e1"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/fU1eliXFmbo"
@@ -330,6 +331,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m1-e2-list">
                               <iframe
+                                title="list-m1-e2"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/DdSBxX3Gmjo"
@@ -343,6 +345,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m1-e3-list">
                               <iframe
+                                title="list-m1-e3"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/P24bH3nmOO0"
@@ -356,6 +359,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m1-e4-list">
                               <iframe
+                                title="list-m1-e4"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/mYqkbU6pHeg"
@@ -369,6 +373,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m1-e5-list">
                               <iframe
+                                title="list-m1-e5"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/RAj7OVrZTRA"
@@ -382,6 +387,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m1-e6-list">
                               <iframe
+                                title="list-m1-e6"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/2qBZhMSEYcg"
@@ -395,6 +401,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m1-e7-list">
                               <iframe
+                                title="list-m1-e7"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/bU2dZzRY-JU"
@@ -721,6 +728,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m2-e1-list">
                               <iframe
+                                title="list-m2-e1"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/fU1eliXFmbo"
@@ -734,6 +742,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m2-e2-list">
                               <iframe
+                                title="list-m2-e2"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/DdSBxX3Gmjo"
@@ -747,6 +756,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m2-e3-list">
                               <iframe
+                                title="list-m2-e3"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/P24bH3nmOO0"
@@ -760,6 +770,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m2-e4-list">
                               <iframe
+                                title="list-m2-e4"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/mYqkbU6pHeg"
@@ -773,6 +784,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m2-e5-list">
                               <iframe
+                                title="list-m2-e5"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/RAj7OVrZTRA"
@@ -786,6 +798,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m2-e6-list">
                               <iframe
+                                title="list-m2-e6"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/2qBZhMSEYcg"
@@ -799,6 +812,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m2-e7-list">
                               <iframe
+                                title="list-m2-e7"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/bU2dZzRY-JU"
@@ -1124,6 +1138,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m3-e1-list">
                               <iframe
+                                title="list-m3-e1"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/fU1eliXFmbo"
@@ -1137,6 +1152,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m3-e2-list">
                               <iframe
+                                title="list-m3-e2"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/DdSBxX3Gmjo"
@@ -1150,6 +1166,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m3-e3-list">
                               <iframe
+                                title="list-m3-e3"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/P24bH3nmOO0"
@@ -1163,6 +1180,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m3-e4-list">
                               <iframe
+                                title="list-m3-e4"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/mYqkbU6pHeg"
@@ -1176,6 +1194,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m3-e5-list">
                               <iframe
+                                title="list-m3-e5"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/RAj7OVrZTRA"
@@ -1189,6 +1208,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m3-e6-list">
                               <iframe
+                                title="list-m3-e6"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/2qBZhMSEYcg"
@@ -1202,6 +1222,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m3-e7-list">
                               <iframe
+                                title="list-m3-e7"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/bU2dZzRY-JU"
@@ -1527,6 +1548,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m4-e1-list">
                               <iframe
+                                title="list-m4-e1"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/fU1eliXFmbo"
@@ -1540,6 +1562,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m4-e2-list">
                               <iframe
+                                title="list-m4-e2"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/DdSBxX3Gmjo"
@@ -1553,6 +1576,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m4-e3-list">
                               <iframe
+                                title="list-m4-e3"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/P24bH3nmOO0"
@@ -1566,6 +1590,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m4-e4-list">
                               <iframe
+                                title="list-m4-e4"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/mYqkbU6pHeg"
@@ -1579,6 +1604,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m4-e5-list">
                               <iframe
+                                title="list-m4-e5"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/RAj7OVrZTRA"
@@ -1592,6 +1618,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m4-e6-list">
                               <iframe
+                                title="list-m4-e6"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/2qBZhMSEYcg"
@@ -1605,6 +1632,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m4-e7-list">
                               <iframe
+                                title="list-m4-e7"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/bU2dZzRY-JU"
@@ -1929,6 +1957,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m5-e1-list">
                               <iframe
+                                title="list-m5-e1"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/fU1eliXFmbo"
@@ -1942,6 +1971,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m5-e2-list">
                               <iframe
+                                title="list-m5-e2"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/DdSBxX3Gmjo"
@@ -1955,6 +1985,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m5-e3-list">
                               <iframe
+                                title="list-m5-e3"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/P24bH3nmOO0"
@@ -1968,6 +1999,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m5-e4-list">
                               <iframe
+                                title="list-m5-e4"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/mYqkbU6pHeg"
@@ -1981,6 +2013,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m5-e5-list">
                               <iframe
+                                title="list-m5-e5"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/RAj7OVrZTRA"
@@ -1994,6 +2027,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m5-e6-list">
                               <iframe
+                                title="list-m5-e6"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/2qBZhMSEYcg"
@@ -2007,6 +2041,7 @@ export class Accordion extends Component {
                               role="tabpanel"
                               aria-labelledby="list-m5-e7-list">
                               <iframe
+                                title="list-m5-e7"
                                 width="560"
                                 height="315"
                                 src="https://www.youtube.com/embed/bU2dZzRY-JU"
