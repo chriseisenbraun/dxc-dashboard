@@ -10,7 +10,7 @@ export class MissionTwo extends Component {
       <>
         <MissionTitle
           heading="Mission 2"
-          text="Mission 2 info goes here"
+          text = "Who are our customers and what do our conversations look like?"
           instructions="Complete these missions:"
         />
         <AccordionHeader />
