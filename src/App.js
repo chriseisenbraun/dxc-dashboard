@@ -19,6 +19,7 @@ class App extends Component {
         <div className="App">
           <Nav />
           <main>
+
             <Route exact path="/" component={Welcome} />
             <Route path="/missions" component={MissionCarousel} />
             <Route path="/missions/1" component={MissionOne} />
@@ -35,6 +36,7 @@ class App extends Component {
             {/* <Route path="/notebook" component={Notebook} /> */}
             {/* <Route path="/missons" component={Notebook} /> */}
             {/* <MissionCarousel /> */}
+
             </main>
             <Footer />
           </div>

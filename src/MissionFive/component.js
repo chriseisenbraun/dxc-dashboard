@@ -15,7 +15,6 @@ export class MissionFive extends Component {
         />
         <AccordionHeader />
         <Accordion />
-
       </>
     )
   }
