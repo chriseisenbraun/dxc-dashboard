@@ -8,11 +8,11 @@ export class Welcome extends Component {
 
     return (
       <>
-        <div class="container-fluid welcome">
+        <div class="container welcome">
           <div className="container py-5">
             <div class="row">
               <div class="col-sm">
-                <h1 className="welcome__heading">Welcome to your sales onboarding experience</h1>
+                <h1 className="welcome__heading">DXC Welcome to your sales onboarding experience</h1>
                 <p className="welcome__text">Welcome to your online onboarding
                   experience. You will find your enablement with a click of the button below. The
                   Missions are meant to be experienced in order, and are filled with brief and
@@ -26,7 +26,7 @@ export class Welcome extends Component {
                     title="Welcome video"
                     width="560"
                     height="315"
-                    src="https://www.youtube.com/embed/DdSBxX3Gmjo"
+                    src="https://www.youtube.com/embed/wX_x8kw_e2M"
                     frameborder="0"
                     allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>

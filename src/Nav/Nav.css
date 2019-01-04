@@ -1,11 +1,21 @@
+.navbar-header {
+  border-bottom: 1px solid #000;
+  /* padding: 2.5rem 2rem; */
+}
+.navbar {
+  padding: 2.1rem 2rem;
+}
 .nav-link {
-  color: var(--black, #231f20) !important;
+  /* color: var(--black, #231f20) !important; */
   margin-right: 2rem;
+
   font-family: 'Oxygen-Bold';
+  transition: color 0.16s ease-out;
+  font-weight: 700;
 }
 
 .nav-link:hover {
-  color: var(--blue-light, #3483aa) !important;
+  color: var(--olive, #656565) !important;
   text-decoration: none;
 }
 
@@ -18,5 +28,5 @@ svg.search-icon {
   fill: var(--black, #231f20);
 }
 svg.search-icon:hover {
-  fill: var(--blue-light, #3483aa);
+  fill: var(--olive, #656565);
 }

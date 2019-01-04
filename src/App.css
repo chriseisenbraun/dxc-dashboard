@@ -1,29 +1,23 @@
 :root {
   --font-size-base: 1.6rem;
-  --slate: #607a96;
-  --blue-light: #3483aa;
-  --blue-medium: #1c6176;
-  --blue-dark: #1e415e;
-  --purple: #493280;
+  --blue-light: #0092ef;
+  --blue-dark: #004061;
+
+  --yellow: #ffed00;
+  --yellow-darker: #ccbe00; /* hover */
+  --olive: #656565; /* hover */
 
   --white: #fff;
-  --gray: #55565a;
-
-  --black: #231f20;
-
-  --green: #2e8c5a;
-  --green-dark: #00695e;
-
-  --orange: #d2642f;
-  --red: #972f1b;
-  --maroon: #6f2d53;
+  --gray: #949494;
+  --black: #000;
+  --black-light: #333333;
 }
 
 /* Fonts */
 
 @font-face {
   font-family: 'Oxygen-Bold';
-  src: url('./fonts/Oxygen-Bold.ttf') format('ttf');
+  src: url('./fonts/Muli-ExtraBold.ttf') format('ttf');
 }
 
 @font-face {
@@ -32,8 +26,8 @@
 }
 
 @font-face {
-  font-family: 'Oxygen-Regular';
-  src: url('./fonts/Oxygen-Regular.ttf') format('ttf');
+  font-family: 'Dxc-Regular';
+  src: url('./fonts/GTWalsheimProRegular.ttf') format('ttf');
 }
 
 html {
@@ -43,14 +37,14 @@ html {
 
 body {
   font-size: var(--font-size-base);
-  font-family: 'Oxygen-Regular';
+  font-family: 'Dxc-Regular';
   /* font-size: 1.6rem; 16px */
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Oxygen-Bold';
+  font-family: 'Dxc-Bold';
 }
 
 ul,

@@ -1,15 +1,15 @@
 import React, {Component} from 'react'
 import './Nav.css';
-import logo from './oxygen-blue-text-logo.svg'
+import logo from './dxc-logo.png'
 import {NavLink} from 'react-router-dom'
 
 export class Nav extends Component {
   render() {
     return (
-      <header className="container">
+      <header className="container-fluid fixed-top navbar-header">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
           <NavLink to="/" className="navbar-brand">
-            <img src={logo} width="100" alt=""/>
+            <img src={logo} alt="" className="welcome__img-logo" />
           </NavLink>
           <button
             className="navbar-toggler"

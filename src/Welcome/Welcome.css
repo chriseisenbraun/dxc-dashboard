@@ -1,20 +1,26 @@
 .welcome {
-  background-color: var(--blue-dark);
+  /* background-color: var(--black-light); */
   /* padding: 6rem 15rem; */
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
 }
 .welcome-flex {
   display: flex;
 }
 
 .welcome__heading {
-  color: var(--white, #fff);
+  color: var(--black, #000);
   margin-bottom: 4rem;
 }
 
 .welcome__text {
-  color: var(--white, #fff);
+  color: var(--black, #000);
   padding-right: 6rem;
   line-height: 1.6;
+}
+
+.welcome__img-logo {
+  width: 40rem;
 }
 
 .welcome__video {
