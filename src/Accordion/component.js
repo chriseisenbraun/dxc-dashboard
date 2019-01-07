@@ -15,7 +15,7 @@ export class Accordion extends Component {
           <div className="card">
             <div className="card-header" id="headingOne">
               <div className="container">
-                 <div className="row">
+                <div className="row py-2">
                   <div className="col-6">
                     <span>
                       <button
@@ -427,7 +427,7 @@ export class Accordion extends Component {
           <div className="card">
             <div className="card-header" id="headingTwo">
               <div className="container">
-                <div className="row">
+                <div className="row py-2">
                   <div className="col-6">
                     <span>
                       <button
@@ -838,7 +838,7 @@ export class Accordion extends Component {
           <div className="card">
             <div className="card-header" id="headingThree">
               <div className="container">
-                <div className="row">
+                <div className="row py-2">
                   <div className="col-6">
                     <span>
                       <button
@@ -1248,7 +1248,7 @@ export class Accordion extends Component {
           <div className="card">
             <div className="card-header" id="headingFour">
               <div className="container">
-                <div className="row">
+                <div className="row py-2">
                   <div className="col-6">
                     <span>
                       <button
@@ -1658,7 +1658,7 @@ export class Accordion extends Component {
           <div className="card">
             <div className="card-header" id="headingFive">
               <div className="container">
-                <div className="row">
+                <div className="row py-2">
                   <div className="col-6">
                     <span>
                       <button

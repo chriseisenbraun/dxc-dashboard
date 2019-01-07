@@ -2,11 +2,33 @@
   /* padding-bottom: 4rem; */
 }
 
+.list-group-item {
+  padding: 1.5rem 1.25rem;
+  transition: color 0.1s ease-in-out;
+}
+
 .list-group-item.active {
   z-index: 2;
-  color: #fff;
-  background-color: #6f2c53;
-  border-color: #6f2c53;
+  color: var(--yellow);
+  background-color: var(--black);
+  border-color: var(--black);
+}
+
+.list-group-item.active::before {
+  border-width: 15px 0 15px 20px;
+  border-color: transparent transparent transparent #000;
+  right: -20px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  bottom: auto;
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  z-index: 2;
+  display: inline-block;
 }
 
 .ep-todo-span {
@@ -16,13 +38,14 @@
 }
 
 .ep-accordion-heading {
-  color: var(--blue-light, #3483aa);
+  /* color: var(--blue-light, #3483aa); */
   font-size: 1.3rem;
 }
 .mission-breadcrumb {
-  color: var(--blue-light, #3483aa);
-  font-size: 1rem;
-  font-weight: 900;
+  /* color: var(--blue-light, #3483aa); */
+  font-size: 1.2rem;
+  font-family: 'Dxc-Bold';
+  /* font-weight: 900; */
   padding-bottom: 2rem;
   border-top: 1px solid rgba(0, 0, 0, 0.125);
   padding-top: 1rem;
@@ -32,10 +55,11 @@
 /* SVG Circle and Checkmark */
 
 .ep-text-button {
-  font-size: 1.4rem;
-  padding: 0;
-  color: var(--maroon, #6f2d53);
+  font-size: 1.8rem;
+  padding: 1rem 0;
+  color: var(--black, #000);
   font-weight: 900;
+  line-height: 0;
 }
 
 .ep-text-status,
@@ -44,7 +68,22 @@
 }
 
 .ep-text-button:hover {
-  color: var(--maroon, #6f2d53);
+  /* color: var(--yellow); */
+  color: var(--black);
+  /* text-decoration: none; */
+  /* position: relative; */
+}
+.ep-text-button:hover::after {
+  /* position: absolute;
+  content: '';
+  border-bottom: solid 2px #ffed00;
+  left: 0;
+  bottom: 10px;
+  right: 0; */
+}
+
+.btn-link:focus {
+  text-decoration: none;
 }
 
 .ep-todo-svg {

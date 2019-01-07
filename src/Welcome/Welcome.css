@@ -16,7 +16,7 @@
 .welcome__text {
   color: var(--black, #000);
   padding-right: 6rem;
-  line-height: 1.6;
+  /* line-height: 1.6; */
 }
 
 .welcome__img-logo {

@@ -1,11 +1,11 @@
 .footer {
-  background-color: var(--blue-dark, #1e415e);
+  background-color: var(--black, #000);
   margin-top: 10rem;
   padding: 2rem 0;
 }
 
 .footer-text {
   font-size: 1.4rem;
-  color: silver;
+  color: var(--white, #fff);
   /* color: var(--white, #fff); */
 }

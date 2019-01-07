@@ -1,17 +1,36 @@
 .navbar-header {
-  border-bottom: 1px solid #000;
+  /* border-bottom: 1px solid #000; */
   /* padding: 2.5rem 2rem; */
 }
 .navbar {
+  border-bottom: 1px solid #000;
   padding: 2.1rem 2rem;
 }
+
+.navbar-brand {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  /* onboarding experience text alignment */
+}
+
+.navbar__onboarding {
+  font-size: 1.8rem;
+  position: absolute;
+  top: 5.5rem;
+  left: 12.2rem;
+  color: var(--blue-bright, #49d3ff);
+  text-transform: uppercase;
+}
+
 .nav-link {
-  /* color: var(--black, #231f20) !important; */
+  color: var(--black, #231f20) !important;
   margin-right: 2rem;
 
-  font-family: 'Oxygen-Bold';
+  font-family: 'Dxc-Bold';
+  text-transform: uppercase;
   transition: color 0.16s ease-out;
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 
 .nav-link:hover {
@@ -25,8 +44,12 @@
 }
 
 svg.search-icon {
-  fill: var(--black, #231f20);
+  /* fill: var(--black, #231f20); */
+  /* stroke: var(--black, #231f20); */
 }
+
 svg.search-icon:hover {
-  fill: var(--olive, #656565);
+  /* fill: var(--olive, #656565); */
+  stroke: var(--olive, #656565);
+  /* stroke: red; */
 }

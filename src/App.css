@@ -2,6 +2,7 @@
   --font-size-base: 1.6rem;
   --blue-light: #0092ef;
   --blue-dark: #004061;
+  --blue-bright: #49d3ff;
 
   --yellow: #ffed00;
   --yellow-darker: #ccbe00; /* hover */
@@ -10,24 +11,24 @@
   --white: #fff;
   --gray: #949494;
   --black: #000;
-  --black-light: #333333;
+  --black-light: #333;
 }
 
 /* Fonts */
 
 @font-face {
-  font-family: 'Oxygen-Bold';
-  src: url('./fonts/Muli-ExtraBold.ttf') format('ttf');
+  font-family: 'Dxc-Bold';
+  src: url('./fonts/GTWalsheimProBold.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Oxygen-Light';
-  src: url('./fonts/Oxygen-Light.ttf') format('ttf');
+  font-family: 'Dxc-Light';
+  src: url('./fonts/GTWalsheimProRegular.ttf') format('truetype');
 }
 
 @font-face {
   font-family: 'Dxc-Regular';
-  src: url('./fonts/GTWalsheimProRegular.ttf') format('ttf');
+  src: url('./fonts/GTWalsheimProRegular.ttf') format('truetype');
 }
 
 html {
@@ -37,14 +38,24 @@ html {
 
 body {
   font-size: var(--font-size-base);
-  font-family: 'Dxc-Regular';
+  font-family: 'Dxc-Regular', Arial, sans-serif;
+  line-height: 1.42857;
   /* font-size: 1.6rem; 16px */
+}
+
+body {
+  padding-top: 200px; /*  navbar if fixed, need to add spcace*/
+}
+
+main {
+  /* width: 80%; */
+  /* margin: 0 auto; */
 }
 
 h1,
 h2,
 h3 {
-  font-family: 'Dxc-Bold';
+  font-family: 'Dxc-Bold', Arial, sans-serif;
 }
 
 ul,
@@ -58,7 +69,13 @@ a {
   text-decoration: none;
 }
 
-main {
-  /* width: 80%; */
-  margin: 0 auto;
+/*  Override bs4 deafault max-width: 1140px
+To match DXC width 1330px */
+
+@media (min-width: 1200px) {
+  main > .container {
+    /* max-width: 1330px; */
+    /* margin-left: 70px; */
+    /* margin-right: 70px; */
+  }
 }
