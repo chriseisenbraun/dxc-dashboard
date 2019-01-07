@@ -4,6 +4,106 @@ import './Accordion.css'
 import { AccordionHeader } from "../AccordionHeader";
 
 export class Accordion extends Component {
+
+  state = {
+    currentStatus: 'Not Started',
+    notStarted: 'Not Started',
+    inProgress: 'In Progress',
+    complete: 'Complete',
+
+    svgStatus:
+      <svg
+        className="ep-todo-svg"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 130.2 130.2">
+        <circle
+          className="path circle completed-svg"
+          fill="none"
+          stroke="#000"
+          stroke-width="6"
+          stroke-miterlimit="10"
+          cx="65.1"
+          cy="65.1"
+          r="62.1" />
+        <polyline
+          className="path check"
+          fill="none"
+          stroke="#000"
+          stroke-width="6"
+          stroke-linecap="round"
+          stroke-miterlimit="10"
+          points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+      </svg>,
+
+svgRed:
+  <svg
+      className="ep-todo-svg"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 130.2 130.2">
+      <circle
+        className="path circle completed-svg"
+        fill="none"
+        stroke="#f00"
+        stroke-width="6"
+        stroke-miterlimit="10"
+        cx="65.1"
+        cy="65.1"
+        r="62.1"/>
+      <polyline
+        className="path check"
+        fill="none"
+        stroke="#f00"
+        stroke-width="6"
+        stroke-linecap="round"
+        stroke-miterlimit="10"
+        points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+    </svg>,
+
+    svgGreen:
+      <svg
+        className="ep-todo-svg"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 130.2 130.2">
+        <circle
+          className="path circle completed-svg"
+          fill="none"
+          stroke="#bada55"
+          stroke-width="6"
+          stroke-miterlimit="10"
+          cx="65.1"
+          cy="65.1"
+          r="62.1" />
+        <polyline
+          className="path check"
+          fill="none"
+          stroke="#bada55"
+          stroke-width="6"
+          stroke-linecap="round"
+          stroke-miterlimit="10"
+          points="100.2,40.2 51.5,88.8 29.8,67.5 " />
+      </svg>
+  }
+
+  handleClickStart = (e) => {
+    console.log(e.target);
+    console.log(this.state);
+    this.setState({
+      currentStatus: this.state.inProgress,
+      svgStatus: this.state.svgGreen
+    });
+  }
+
+handleClickFinish = (e) => {
+  console.log(e.target);
+  console.log(this.state);
+  this.setState({
+    currentStatus: this.state.complete,
+    svgStatus: this.state.svgRed
+  });
+}
   render() {
 
     return (
@@ -34,8 +134,9 @@ export class Accordion extends Component {
 
                   <div className="col">
                     <span className="ep-text-status">
-                      <span className="ep-todo-span">
-                        <svg
+                      <span className="ep-todo-span click-m1-e1">
+                      {this.state.svgStatus}
+                        {/* <svg
                           className="ep-todo-svg"
                           version="1.1"
                           xmlns="http://www.w3.org/2000/svg"
@@ -43,7 +144,7 @@ export class Accordion extends Component {
                           <circle
                             className="path circle completed-svg"
                             fill="none"
-                            stroke="#3483aa"
+                            stroke="#f00"
                             stroke-width="6"
                             stroke-miterlimit="10"
                             cx="65.1"
@@ -52,13 +153,13 @@ export class Accordion extends Component {
                           <polyline
                             className="path check"
                             fill="none"
-                            stroke="#73AF55"
+                            stroke="#bada55"
                             stroke-width="6"
                             stroke-linecap="round"
                             stroke-miterlimit="10"
                             points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                        </svg>
-                      </span>Complete</span>
+                        </svg> */}
+                      </span>{this.state.currentStatus}</span>
                   </div>
 
                 </div>
@@ -87,7 +188,8 @@ export class Accordion extends Component {
                               data-toggle="list"
                               href="#list-m1-e1"
                               role="tab"
-                              aria-controls="home">
+                              aria-controls="home"
+                              onClick={this.handleClickStart}>
                               <span className="ep-todo-span">
                                 <svg
                                   className="ep-todo-svg"
@@ -280,7 +382,8 @@ export class Accordion extends Component {
                               data-toggle="list"
                               href="#list-m1-e7"
                               role="tab"
-                              aria-controls="settings">
+                              aria-controls="settings"
+                              onClick={this.handleClickFinish}>
                               <span className="ep-todo-span">
                                 <svg
                                   className="ep-todo-svg"

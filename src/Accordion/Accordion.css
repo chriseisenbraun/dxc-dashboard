@@ -92,7 +92,7 @@
 }
 
 .completed-svg {
-  stroke: var(--green, #2e8c5a);
+  /* stroke: var(--green, #2e8c5a); */
 }
 
 /* BS4 override */
