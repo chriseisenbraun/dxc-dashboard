@@ -10,6 +10,10 @@ export class Accordion extends Component {
     notStarted: 'Not Started',
     inProgress: 'In Progress',
     complete: 'Complete',
+    currentStatus2: 'Not Started 2',
+    notStarted2: 'Not Started',
+    inProgress2: 'In Progress',
+    complete2: 'Complete',
 
     svgStatus:
       <svg
@@ -87,14 +91,14 @@ svgRed:
       </svg>
   }
 
-  handleClickStart = (e) => {
-    console.log(e.target);
-    console.log(this.state);
-    this.setState({
-      currentStatus: this.state.inProgress,
-      svgStatus: this.state.svgGreen
-    });
-  }
+handleClick = (e) => {
+  console.log(e.target);
+  console.log(this.state);
+  this.setState({
+    currentStatus: this.state.inProgress,
+    svgStatus: this.state.svgGreen
+  });
+}
 
 handleClickFinish = (e) => {
   console.log(e.target);
@@ -104,6 +108,27 @@ handleClickFinish = (e) => {
     svgStatus: this.state.svgRed
   });
 }
+
+  // M1 Ep2 test
+
+  handleClickE2 = (e) => {
+    console.log(e.target);
+    console.log(this.state);
+    this.setState({
+      currentStatus2: this.state.inProgress2,
+      svgStatus: this.state.svgGreen
+    });
+  }
+
+  handleClickFinish2 = (e) => {
+    console.log(e.target);
+    console.log(this.state);
+    this.setState({
+      currentStatus2: this.state.complete,
+      svgStatus2: this.state.svgRed
+    });
+  }
+
   render() {
 
     return (
@@ -136,29 +161,7 @@ handleClickFinish = (e) => {
                     <span className="ep-text-status">
                       <span className="ep-todo-span click-m1-e1">
                       {this.state.svgStatus}
-                        {/* <svg
-                          className="ep-todo-svg"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 130.2 130.2">
-                          <circle
-                            className="path circle completed-svg"
-                            fill="none"
-                            stroke="#f00"
-                            stroke-width="6"
-                            stroke-miterlimit="10"
-                            cx="65.1"
-                            cy="65.1"
-                            r="62.1"/>
-                          <polyline
-                            className="path check"
-                            fill="none"
-                            stroke="#bada55"
-                            stroke-width="6"
-                            stroke-linecap="round"
-                            stroke-miterlimit="10"
-                            points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                        </svg> */}
+
                       </span>{this.state.currentStatus}</span>
                   </div>
 
@@ -189,31 +192,11 @@ handleClickFinish = (e) => {
                               href="#list-m1-e1"
                               role="tab"
                               aria-controls="home"
-                              onClick={this.handleClickStart}>
+                              onClick={this.handleClick}>
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
+
+                                {this.state.svgStatus}
+
                               </span>Expectations of me week 1</a>
 
                             <a
@@ -574,7 +557,7 @@ handleClickFinish = (e) => {
                             stroke-miterlimit="10"
                             points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
                         </svg>
-                      </span>In progress</span>
+                      </span>{this.state.currentStatus2}</span>
                   </div>
 
                 </div>
@@ -602,7 +585,8 @@ handleClickFinish = (e) => {
                               data-toggle="list"
                               href="#list-m2-e1"
                               role="tab"
-                              aria-controls="home">
+                              aria-controls="home"
+                              onClick={this.handleClickE2}>
                               <span className="ep-todo-span">
                                 <svg
                                   className="ep-todo-svg"
@@ -627,7 +611,7 @@ handleClickFinish = (e) => {
                                     stroke-miterlimit="10"
                                     points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
                                 </svg>
-                              </span>Expectations of me week 1</a>
+                              </span>M1 EP2 CH1</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m2-e2-list"
@@ -984,7 +968,7 @@ handleClickFinish = (e) => {
                             stroke-miterlimit="10"
                             points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
                         </svg>
-                      </span>Not Started</span>
+                      </span>Not Started 3</span>
                   </div>
 
                 </div>
