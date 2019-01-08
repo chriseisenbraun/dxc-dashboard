@@ -1,133 +1,184 @@
 import React, {Component} from "react";
 import './Accordion.css'
-
 import { AccordionHeader } from "../AccordionHeader";
 
 export class Accordion extends Component {
 
   state = {
-    currentStatus: 'Not Started',
     notStarted: 'Not Started',
     inProgress: 'In Progress',
     complete: 'Complete',
-    currentStatus2: 'Not Started 2',
-    notStarted2: 'Not Started',
-    inProgress2: 'In Progress',
-    complete2: 'Complete',
 
-    svgStatus:
-      <svg
-        className="ep-todo-svg"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 130.2 130.2">
-        <circle
-          className="path circle completed-svg"
-          fill="none"
-          stroke="#000"
-          stroke-width="6"
-          stroke-miterlimit="10"
-          cx="65.1"
-          cy="65.1"
-          r="62.1" />
-        <polyline
-          className="path check"
-          fill="none"
-          stroke="#000"
-          stroke-width="6"
-          stroke-linecap="round"
-          stroke-miterlimit="10"
-          points="100.2,40.2 51.5,88.8 29.8,67.5 " />
-      </svg>,
 
-svgRed:
-  <svg
-      className="ep-todo-svg"
-      version="1.1"
-      xmlns="http://www.w3.org/2000/svg"
-      viewBox="0 0 130.2 130.2">
-      <circle
-        className="path circle completed-svg"
-        fill="none"
-        stroke="#f00"
-        stroke-width="6"
-        stroke-miterlimit="10"
-        cx="65.1"
-        cy="65.1"
-        r="62.1"/>
-      <polyline
-        className="path check"
-        fill="none"
-        stroke="#f00"
-        stroke-width="6"
-        stroke-linecap="round"
-        stroke-miterlimit="10"
-        points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
+    notStarted2: 'Not Started 2',
+    inProgress2: 'In Progress 2',
+    complete2: 'Complete 2',
+
+    notStarted3: 'Not Started 3',
+    inProgress3: 'In Progress 3',
+    complete3: 'Complete 3',
+
+    notStarted4: 'Not Started 4',
+    inProgress4: 'In Progress 4',
+    complete4: 'Complete 4',
+
+    notStarted5: 'Not Started 5',
+    inProgress5: 'In Progress 5',
+    complete5: 'Complete 5',
+
+    svgNotChecked: <svg className="ep-todo-svg svg-circle" viewBox="0 0 301 301" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z" fill-rule="nonzero" stroke="#ff0" stroke-width=".15" transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
+
+    svgNotChecked2: <svg className="ep-todo-svg svg-circle" viewBox="0 0 301 301" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z" fill-rule="nonzero" stroke="#ff0" stroke-width=".15" transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
+
+    svgNotChecked3: <svg className="ep-todo-svg svg-circle" viewBox="0 0 301 301" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z" fill-rule="nonzero" stroke="#ff0" stroke-width=".15" transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
+
+    // TO DO ADD svgChecked2-* states
+
+    svgChecked: <svg className="ep-todo-svg svg-checkmark-blue" viewBox="0 0 301 301" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z" fill-rule="nonzero" stroke="#49d3ff" stroke-width=".15" transform="matrix(6.78733 0 0 6.78733 -1283.663 -447.464)"/><path d="M226.873 87.531l-93.984 125.937L84.85 165.43" fill="none" stroke="#49d3ff" stroke-width="14" stroke-linecap="round" stroke-miterlimit="1.5"/></svg>,
+
+
+    svgCircle: <svg className="ep-todo-svg svg-circle" viewBox="0 0 301 301" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z" fill-rule="nonzero" stroke="#ff0" stroke-width=".15" transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
+
+
+    svgInProgress: <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M150 0C67.2 0 0 67.2 0 150s67.2 150 150 150 150-67.2 150-150S232.8 0 150 0zm0 12c76.2 0 138 61.8 138 138s-61.8 138-138 138S12 226.2 12 150 73.8 12 150 12zM72 156h78V42h12v126H72v-12z"/></svg>,
+
+    svgNotStarted: <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z" />
     </svg>,
 
-    svgGreen:
-      <svg
-        className="ep-todo-svg"
-        version="1.1"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 130.2 130.2">
-        <circle
-          className="path circle completed-svg"
-          fill="none"
-          stroke="#bada55"
-          stroke-width="6"
-          stroke-miterlimit="10"
-          cx="65.1"
-          cy="65.1"
-          r="62.1" />
-        <polyline
-          className="path check"
-          fill="none"
-          stroke="#bada55"
-          stroke-width="6"
-          stroke-linecap="round"
-          stroke-miterlimit="10"
-          points="100.2,40.2 51.5,88.8 29.8,67.5 " />
-      </svg>
+    svgNotStarted2: <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z" />
+    </svg>,
+
+    svgNotStarted3: <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z" />
+    </svg>,
+
+    svgNotStarted4: <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z" />
+    </svg>,
+
+    svgNotStarted5: <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z" />
+    </svg>,
+
+
+    svgComplete: <svg  className="ep-todo-svg" viewBox="0 0 301 301" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z" fill-rule="nonzero" stroke="#c9c9ce" stroke-width=".15" transform="matrix(6.78733 0 0 6.78733 -1283.663 -447.464)"/><path d="M226.873 87.531l-93.984 125.937L84.85 165.43" fill="none" stroke="#050505" stroke-width="14" stroke-linecap="round" stroke-miterlimit="1.5"/></svg>,
+
   }
 
-handleClick = (e) => {
-  console.log(e.target);
-  console.log(this.state);
+handleClickE1 = (e) => {
   this.setState({
-    currentStatus: this.state.inProgress,
-    svgStatus: this.state.svgGreen
-  });
+  notStarted: this.state.inProgress,
+  svgNotStarted: this.state.svgInProgress,
+  svgNotChecked: this.state.svgChecked
+});
 }
 
-handleClickFinish = (e) => {
-  console.log(e.target);
-  console.log(this.state);
+handleClickE1C2 = (e) => {
   this.setState({
-    currentStatus: this.state.complete,
-    svgStatus: this.state.svgRed
-  });
+  svgNotChecked2: this.state.svgChecked
+});
+}
+handleClickE1C3 = (e) => {
+  this.setState({
+  svgNotChecked3: this.state.svgChecked
+});
+}
+handleClickE1C4 = (e) => {
+  this.setState({
+  svgNotChecked4: this.state.svgChecked
+});
+
+}
+handleClickE1C5 = (e) => {
+  this.setState({
+  svgNotChecked5: this.state.svgChecked
+});
 }
 
-  // M1 Ep2 test
+handleClickE1C6 = (e) => {
+  this.setState({
+  svgNotChecked6: this.state.svgChecked
+});
+}
 
-  handleClickE2 = (e) => {
-    console.log(e.target);
-    console.log(this.state);
-    this.setState({
-      currentStatus2: this.state.inProgress2,
-      svgStatus: this.state.svgGreen
-    });
-  }
+handleClickE1C7 = (e) => {
+  this.setState({
+  svgNotChecked7: this.state.svgChecked
+});
+}
 
-  handleClickFinish2 = (e) => {
-    console.log(e.target);
-    console.log(this.state);
-    this.setState({
-      currentStatus2: this.state.complete,
-      svgStatus2: this.state.svgRed
-    });
-  }
+
+
+handleClickE2 = (e) => {
+  this.setState({
+  notStarted2: this.state.inProgress,
+  svgNotStarted2: this.state.svgInProgress
+});
+}
+
+
+// START
+handleClickE2C1 = (e) => {
+  this.setState({
+  svgNotChecked8: this.state.svgChecked
+});
+}
+
+
+
+handleClickE3 = (e) => {
+  this.setState({
+  notStarted3: this.state.inProgress,
+  svgNotStarted3: this.state.svgInProgress
+});
+}
+
+handleClickE4 = (e) => {
+  this.setState({
+  notStarted4: this.state.inProgress,
+  svgNotStarted4: this.state.svgInProgress
+});
+}
+
+handleClickE5 = (e) => {
+  this.setState({
+  notStarted5: this.state.inProgress,
+  svgNotStarted5: this.state.svgInProgress
+});
+}
+
+handleClickFinishE1 = (e) => {
+  this.setState({
+  notStarted: this.state.complete,
+  svgNotStarted: this.state.svgComplete
+});
+}
+
+handleClickFinishE2 = (e) => {
+  this.setState({
+  notStarted2: this.state.complete,
+  svgNotStarted2: this.state.svgComplete
+});
+}
+
+handleClickFinishE3 = (e) => {
+  this.setState({
+  notStarted3: this.state.complete,
+  svgNotStarted3: this.state.svgComplete
+});
+}
+
+handleClickFinishE4 = (e) => {
+  this.setState({
+  notStarted4: this.state.complete,
+  svgNotStarted4: this.state.svgComplete
+});
+}
+
+handleClickFinishE5 = (e) => {
+  this.setState({
+  notStarted5: this.state.complete,
+  svgNotStarted5: this.state.svgComplete
+});
+}
+
 
   render() {
 
@@ -160,9 +211,9 @@ handleClickFinish = (e) => {
                   <div className="col">
                     <span className="ep-text-status">
                       <span className="ep-todo-span click-m1-e1">
-                      {this.state.svgStatus}
+                      {this.state.svgNotStarted}
 
-                      </span>{this.state.currentStatus}</span>
+                      </span>{this.state.notStarted}</span>
                   </div>
 
                 </div>
@@ -192,12 +243,12 @@ handleClickFinish = (e) => {
                               href="#list-m1-e1"
                               role="tab"
                               aria-controls="home"
-                              onClick={this.handleClick}>
+                              onClick={this.handleClickE1}>
                               <span className="ep-todo-span">
 
-                                {this.state.svgStatus}
+                                {this.state.svgNotChecked}
 
-                              </span>Expectations of me week 1</a>
+                              </span>M1 E1 C1 Expectations of me week 1</a>
 
                             <a
                               class="list-group-item list-group-item-action"
@@ -205,64 +256,26 @@ handleClickFinish = (e) => {
                               data-toggle="list"
                               href="#list-m1-e2"
                               role="tab"
-                              aria-controls="profile">
+                              aria-controls="profile"
+                              onClick={this.handleClickE1C2}>
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>How will I spend my time?</a>
+                              {this.state.svgNotChecked2}
+
+
+                              </span>M1 E1 C2 How will I spend my time?</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m1-e3-list"
                               data-toggle="list"
                               href="#list-m1-e3"
                               role="tab"
-                              aria-controls="messages">
+                              aria-controls="messages"
+                              onClick={this.handleClickE1C3}>
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>What does this onboarding look like</a>
+
+                              {this.state.svgNotChecked3}
+
+                              </span>M1 E1 C3 What does this onboarding look like</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m1-e4-list"
@@ -271,30 +284,9 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="settings">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Where do I go for help?</a>
+                              {this.state.svgCircle}
+
+                              </span>M1 E1 C4 Where do I go for help?</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m1-e5-list"
@@ -303,30 +295,10 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="settings">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Access I need</a>
+                              {this.state.svgCircle}
+
+
+                              </span>M1 E1 C5 Access I need</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m1-e6-list"
@@ -335,30 +307,9 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="settings">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Who are the people I need to know?</a>
+                                {this.state.svgCircle}
+
+                              </span>M1 E1 C6 Who are the people I need to know?</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m1-e7-list"
@@ -366,32 +317,11 @@ handleClickFinish = (e) => {
                               href="#list-m1-e7"
                               role="tab"
                               aria-controls="settings"
-                              onClick={this.handleClickFinish}>
+                              onClick={this.handleClickFinishE1}>
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>What do I do first?</a>
+                                {this.state.svgCircle}
+
+                              </span>M1 E1 C7 What do I do first?</a>
 
                           </div>
                         </div>
@@ -528,36 +458,15 @@ handleClickFinish = (e) => {
                   </div>
 
                   <div className="col">
-                    <span className="ep-text-time">18 Min</span>
+                    <span className="ep-text-time">14 Min</span>
                   </div>
 
                   <div className="col">
                     <span className="ep-text-status">
                       <span className="ep-todo-span">
-                        <svg
-                          className="ep-todo-svg"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 130.2 130.2">
-                          <circle
-                            className="path circle"
-                            fill="none"
-                            stroke="#000"
-                            stroke-width="6"
-                            stroke-miterlimit="10"
-                            cx="65.1"
-                            cy="65.1"
-                            r="62.1"/>
-                          <polyline
-                            className="path check"
-                            fill="none"
-                            stroke="#73AF55"
-                            stroke-width="6"
-                            stroke-linecap="round"
-                            stroke-miterlimit="10"
-                            points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                        </svg>
-                      </span>{this.state.currentStatus2}</span>
+                      {this.state.svgNotStarted2}
+
+                      </span>{this.state.notStarted2}</span>
                   </div>
 
                 </div>
@@ -588,30 +497,10 @@ handleClickFinish = (e) => {
                               aria-controls="home"
                               onClick={this.handleClickE2}>
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>M1 EP2 CH1</a>
+
+                              {this.state.svgNotChecked3}
+
+                              </span>M1 E2 C1</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m2-e2-list"
@@ -620,30 +509,10 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="profile">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>How will I spend my time?</a>
+
+                                {this.state.svgCircle}
+
+                              </span>M1 E2 C2</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m2-e3-list"
@@ -652,30 +521,10 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="messages">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>What does this onboarding look like</a>
+
+                              {this.state.svgCircle}
+
+                              </span>M1 E2 C3</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m2-e4-list"
@@ -684,30 +533,9 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="settings">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Where do I go for help?</a>
+                              {this.state.svgCircle}
+
+                              </span>M1 E2 C4</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m2-e5-list"
@@ -716,30 +544,9 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="settings">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Access I need</a>
+                                {this.state.svgCircle}
+
+                                </span>M1 E2 C5</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m2-e6-list"
@@ -748,62 +555,22 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="settings">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Who are the people I need to know?</a>
+                                {this.state.svgCircle}
+
+                              </span>M1 E2 C6</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m2-e7-list"
                               data-toggle="list"
                               href="#list-m2-e7"
                               role="tab"
-                              aria-controls="settings">
+                              aria-controls="settings"
+                              onClick={this.handleClickFinishE2}>
+
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>What do I do first?</a>
+                                {this.state.svgCircle}
+
+                              </span>M1 E2 C7</a>
 
                           </div>
                         </div>
@@ -939,36 +706,15 @@ handleClickFinish = (e) => {
                     </span>
                   </div>
                   <div className="col">
-                    <span className="ep-text-time">6 Min</span>
+                    <span className="ep-text-time">7 Min</span>
                   </div>
 
                   <div className="col">
                     <span className="ep-text-status">
                       <span className="ep-todo-span">
-                        <svg
-                          className="ep-todo-svg"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 130.2 130.2">
-                          <circle
-                            className="path circle"
-                            fill="none"
-                            stroke="#000"
-                            stroke-width="6"
-                            stroke-miterlimit="10"
-                            cx="65.1"
-                            cy="65.1"
-                            r="62.1"/>
-                          <polyline
-                            className="path check"
-                            fill="none"
-                            stroke="#73AF55"
-                            stroke-width="6"
-                            stroke-linecap="round"
-                            stroke-miterlimit="10"
-                            points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                        </svg>
-                      </span>Not Started 3</span>
+                      {this.state.svgNotStarted3}
+
+                      </span>{this.state.notStarted3}</span>
                   </div>
 
                 </div>
@@ -996,32 +742,13 @@ handleClickFinish = (e) => {
                               data-toggle="list"
                               href="#list-m3-e1"
                               role="tab"
-                              aria-controls="home">
+                              aria-controls="home"
+                              onClick={this.handleClickE3}>
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Expectations of me week 2</a>
+
+                                {this.state.svgCircle}
+
+                              </span>E1 E3 C1</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m3-e2-list"
@@ -1030,30 +757,9 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="profile">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>How will I spend my time?</a>
+                                {this.state.svgCircle}
+
+                              </span>E1 E3 C2</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m3-e3-list"
@@ -1062,30 +768,9 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="messages">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>What does this onboarding look like</a>
+                              {this.state.svgCircle}
+
+                              </span>E1 E3 C3</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m3-e4-list"
@@ -1094,30 +779,9 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="settings">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Where do I go for help?</a>
+                                {this.state.svgCircle}
+
+                              </span>E1 E3 C4</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m3-e5-list"
@@ -1126,30 +790,9 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="settings">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Access I need</a>
+                                {this.state.svgCircle}
+
+                              </span>E1 E3 C5</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m3-e6-list"
@@ -1158,62 +801,21 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="settings">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Who are the people I need to know?</a>
+                                {this.state.svgCircle}
+
+                              </span>E1 E3 C6</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m3-e7-list"
                               data-toggle="list"
                               href="#list-m3-e7"
                               role="tab"
-                              aria-controls="settings">
+                              aria-controls="settings"
+                              onClick={this.handleClickFinishE3}>
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>What do I do first?</a>
+                                {this.state.svgCircle}
+
+                              </span>E1 E3 C6</a>
 
                           </div>
                         </div>
@@ -1355,30 +957,9 @@ handleClickFinish = (e) => {
                   <div className="col">
                     <span className="ep-text-status">
                       <span className="ep-todo-span">
-                        <svg
-                          className="ep-todo-svg"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 130.2 130.2">
-                          <circle
-                            className="path circle"
-                            fill="none"
-                            stroke="#000"
-                            stroke-width="6"
-                            stroke-miterlimit="10"
-                            cx="65.1"
-                            cy="65.1"
-                            r="62.1"/>
-                          <polyline
-                            className="path check"
-                            fill="none"
-                            stroke="#73AF55"
-                            stroke-width="6"
-                            stroke-linecap="round"
-                            stroke-miterlimit="10"
-                            points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                        </svg>
-                      </span>Not Started</span>
+
+                        {this.state.svgNotStarted4}
+                      </span>{this.state.notStarted4}</span>
                   </div>
 
                 </div>
@@ -1406,32 +987,13 @@ handleClickFinish = (e) => {
                               data-toggle="list"
                               href="#list-m4-e1"
                               role="tab"
-                              aria-controls="home">
+                              aria-controls="home"
+                              onClick={this.handleClickE4}>
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Expectations of me week 4</a>
+
+                                {this.state.svgCircle}
+
+                              </span>M1 E4 C1</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m4-e2-list"
@@ -1440,30 +1002,8 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="profile">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>How will I spend my time?</a>
+                                {this.state.svgCircle}
+                              </span>M1 E4 C2</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m4-e3-list"
@@ -1472,29 +1012,7 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="messages">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
+                                {this.state.svgCircle}
                               </span>What does this onboarding look like</a>
                             <a
                               class="list-group-item list-group-item-action"
@@ -1504,30 +1022,8 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="settings">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Where do I go for help?</a>
+                                {this.state.svgCircle}
+                              </span>M1 E4 C3</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m4-e5-list"
@@ -1536,30 +1032,8 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="settings">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Access I need</a>
+                                {this.state.svgCircle}
+                              </span>M1 E4 C4</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m4-e6-list"
@@ -1568,62 +1042,19 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="settings">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Who are the people I need to know?</a>
+                                {this.state.svgCircle}
+                              </span>M1 E4 C5</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m4-e7-list"
                               data-toggle="list"
                               href="#list-m4-e7"
                               role="tab"
-                              aria-controls="settings">
+                              aria-controls="settings"
+                              onClick={this.handleClickFinishE4}>
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>What do I do first?</a>
+                              {this.state.svgCircle}
+                              </span>M1 E4 C6</a>
 
                           </div>
                         </div>
@@ -1759,36 +1190,17 @@ handleClickFinish = (e) => {
                     </span>
                   </div>
                   <div className="col">
-                    <span className="ep-text-time">18 Min</span>
+                    <span className="ep-text-time">11 Min</span>
                   </div>
 
                   <div className="col">
                     <span className="ep-text-status">
                       <span className="ep-todo-span">
-                        <svg
-                          className="ep-todo-svg"
-                          version="1.1"
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 130.2 130.2">
-                          <circle
-                            className="path circle"
-                            fill="none"
-                            stroke="#000"
-                            stroke-width="6"
-                            stroke-miterlimit="10"
-                            cx="65.1"
-                            cy="65.1"
-                            r="62.1"/>
-                          <polyline
-                            className="path check"
-                            fill="none"
-                            stroke="#73AF55"
-                            stroke-width="6"
-                            stroke-linecap="round"
-                            stroke-miterlimit="10"
-                            points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                        </svg>
-                      </span>Not Started</span>
+
+                         {this.state.svgNotStarted5}
+
+                      </span>{this.state.notStarted5}</span>
+
                   </div>
                 </div>
               </div>
@@ -1815,32 +1227,13 @@ handleClickFinish = (e) => {
                               data-toggle="list"
                               href="#list-m5-e1"
                               role="tab"
-                              aria-controls="home">
+                              aria-controls="home"
+                              onClick={this.handleClickE5}>
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Expectations of me week 5</a>
+
+                                {this.state.svgCircle}
+
+                              </span>M1 E5 C1</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m5-e2-list"
@@ -1849,30 +1242,8 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="profile">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>How will I spend my time?</a>
+                                {this.state.svgCircle}
+                              </span>M1 E5 C2</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m5-e3-list"
@@ -1881,30 +1252,8 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="messages">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>What does this onboarding look like</a>
+                                {this.state.svgCircle}
+                              </span>M1 E5 C3</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m5-e4-list"
@@ -1913,30 +1262,8 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="settings">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Where do I go for help?</a>
+                                {this.state.svgCircle}
+                              </span>M1 E5 C4</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m5-e5-list"
@@ -1945,30 +1272,8 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="settings">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Access I need</a>
+                                {this.state.svgCircle}
+                              </span>M1 E5 C5</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m5-e6-list"
@@ -1977,62 +1282,19 @@ handleClickFinish = (e) => {
                               role="tab"
                               aria-controls="settings">
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>Who are the people I need to know?</a>
+                                {this.state.svgCircle}
+                              </span>M1 E5 C6</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m5-e7-list"
                               data-toggle="list"
                               href="#list-m5-e7"
                               role="tab"
-                              aria-controls="settings">
+                              aria-controls="settings"
+                              onClick={this.handleClickFinishE5}>
                               <span className="ep-todo-span">
-                                <svg
-                                  className="ep-todo-svg"
-                                  version="1.1"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  viewBox="0 0 130.2 130.2">
-                                  <circle
-                                    className="path circle"
-                                    fill="none"
-                                    stroke="#000"
-                                    stroke-width="6"
-                                    stroke-miterlimit="10"
-                                    cx="65.1"
-                                    cy="65.1"
-                                    r="62.1"/>
-                                  <polyline
-                                    className="path check"
-                                    fill="none"
-                                    stroke="#73AF55"
-                                    stroke-width="6"
-                                    stroke-linecap="round"
-                                    stroke-miterlimit="10"
-                                    points="100.2,40.2 51.5,88.8 29.8,67.5 "/>
-                                </svg>
-                              </span>What do I do first?</a>
+                               {this.state.svgCircle}
+                              </span>M1 E5 C7</a>
 
                           </div>
                         </div>

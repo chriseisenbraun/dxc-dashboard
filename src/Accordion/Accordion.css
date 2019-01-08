@@ -103,3 +103,13 @@
 .card {
   border-radius: none;
 }
+
+
+.svg-circle {
+  fill: var(--blue-bright);
+}
+
+.svg-checkmark-blue {
+  fill: var(--blue-bright);
+  stroke: var(--blue-bright);
+}
