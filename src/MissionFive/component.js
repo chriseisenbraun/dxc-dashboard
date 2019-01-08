@@ -10,7 +10,7 @@ export class MissionFive extends Component {
       <>
         <MissionTitle
           heading="Mission 5"
-          text = "Closing a deal, heading into deliver and the next deal"
+          text= "Closing, Delivering, and Growing"
           instructions="Complete these missions:"
         />
         <AccordionHeader />

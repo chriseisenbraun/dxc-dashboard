@@ -16,21 +16,21 @@ export class MissionCarousel extends Component {
                 <Link to="/missions/1/"
                   className="mission-carousel__link">
                   <span className="mission-carousel__link-span">Misson 1</span>
-                  <span className="mission-carousel__link-span">What I need to know about the company and how we sell</span>
+                  <span className="mission-carousel__link-span">Sales at DXC</span>
                 </Link></li>
 
               <li className="mission-carousel__list-item">
                 <Link to="/missions/2"
                   className="mission-carousel__link">
                   <span className="mission-carousel__link-span">Mission 2</span>
-                  <span className="mission-carousel__link-span">Who are our customers and what do our conversations look like?</span>
+                  <span className="mission-carousel__link-span">DXC Customer Conversations</span>
                 </Link></li>
 
               <li className="mission-carousel__list-item">
                 <Link to="/missions/3"
                   className="mission-carousel__link">
                   <span className="mission-carousel__link-span">Mission 3</span>
-                  <span className="mission-carousel__link-span">Who are our partners?</span>
+                  <span className="mission-carousel__link-span">Working with Partners</span>
                 </Link>
               </li>
 
@@ -38,7 +38,7 @@ export class MissionCarousel extends Component {
                 <Link to="/missions/4"
                   className="mission-carousel__link">
                   <span className="mission-carousel__link-span">Mission 4</span>
-                  <span className="mission-carousel__link-span">Mapping customer conversations to what we offer</span>
+                  <span className="mission-carousel__link-span">Customer Needs & What We Sell</span>
                 </Link>
               </li>
 
@@ -46,7 +46,7 @@ export class MissionCarousel extends Component {
                 <Link to="/missions/5"
                   className="mission-carousel__link">
                   <span className="mission-carousel__link-span">Mission 5</span>
-                  <span className="mission-carousel__link-span">Closing a deal, heading into deliver and the next deal</span>
+                  <span className="mission-carousel__link-span">Closing, Delivering, and Growing</span>
                 </Link>
               </li>
 
