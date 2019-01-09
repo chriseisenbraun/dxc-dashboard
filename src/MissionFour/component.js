@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { MissionTitle } from '../MissionTitle';
 import { AccordionHeader } from '../AccordionHeader';
-import { Accordion } from '../Accordion';
+import {AccordionFour} from '../AccordionFour';
 
 export class MissionFour extends Component {
   render() {
@@ -14,7 +14,7 @@ export class MissionFour extends Component {
           instructions="Complete these missions:"
         />
         <AccordionHeader />
-        <Accordion />
+        <AccordionFour />
       </>
     )
   }

@@ -30,21 +30,21 @@ export class Accordion extends Component {
     inProgress: 'In Progress',
     complete: 'Complete',
 
-    notStarted2: 'Not Started 2',
-    inProgress2: 'In Progress 2',
-    complete2: 'Complete 2',
+    notStarted2: 'Not Started',
+    inProgress2: 'In Progress',
+    complete2: 'Completed',
 
-    notStarted3: 'Not Started 3',
-    inProgress3: 'In Progress 3',
-    complete3: 'Complete 3',
+    notStarted3: 'Not Started',
+    inProgress3: 'In Progress',
+    complete3: 'Completed',
 
-    notStarted4: 'Not Started 4',
-    inProgress4: 'In Progress 4',
-    complete4: 'Complete 4',
+    notStarted4: 'Not Started',
+    inProgress4: 'In Progress',
+    complete4: 'Completed',
 
-    notStarted5: 'Not Started 5',
-    inProgress5: 'In Progress 5',
-    complete5: 'Complete 5',
+    notStarted5: 'Not Started',
+    inProgress5: 'In Progress',
+    complete5: 'Completed',
 
     svgNotChecked: <svg
       className="ep-todo-svg svg-circle"
@@ -938,11 +938,14 @@ this.setState({notStarted3: this.state.complete, svgNotStarted3: this.state.svgC
   }
 
   handleClickFinishE4 = (e) => {
-    this.setState({ notStarted4: this.state.complete, svgNotStarted4: this.state.svgComplete, svgNotCheckedE45: this.state.svgChecked, svgBadgeNotStarted4: this.state.svgBadgeComplete});
+    this.setState({ notStarted4: this.state.complete, svgNotStarted4: this.state.svgComplete, svgNotCheckedE4C5: this.state.svgChecked, svgBadgeNotStarted4: this.state.svgBadgeComplete});
   }
 
   handleClickFinishE5 = (e) => {
-this.setState({notStarted5: this.state.complete, svgNotStarted5: this.state.svgComplete, svgNotCheckedE5E4: this.state.svgChecked, svgBadgeNotStarted5: this.state.svgBadgeComplete});
+this.setState({notStarted5: this.state.complete,
+  svgNotStarted5: this.state.svgComplete,
+  svgNotCheckedE5C4: this.state.svgChecked,
+  svgBadgeNotStarted5: this.state.svgBadgeComplete});
   }
 
   render() {
@@ -2024,7 +2027,7 @@ this.setState({notStarted5: this.state.complete, svgNotStarted5: this.state.svgC
        {/* Start Checkpoints */ }
 
     <div className="container checkpoint">
-      <div className="row d-flex justify-content-between">
+      <div className="row d-flex">
 
         <div className="col checkpoint-icon-wrap">
 

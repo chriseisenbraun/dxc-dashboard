@@ -1,3 +1,7 @@
+.col.checkpoint-icon-wrap {
+  flex: 0;
+}
+
 .checkpoint-icon-wrap {
   display: flex;
   justify-content: flex-start;
@@ -5,5 +9,6 @@
 }
 
 .checkpoint-icon {
-  width: 65%;
+  /* width: 65%; */
+  width: 14rem;
 }

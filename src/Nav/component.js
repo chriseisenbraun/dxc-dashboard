@@ -26,23 +26,23 @@ export class Nav extends Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ml-auto">
               <li className="nav-item active">
-                <NavLink to="/missions" className="nav-link" href="#">
+                <NavLink to="/missions" className="nav-link">
                   Missions
                   <span className="sr-only">(current)</span>
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/dashboard" className="nav-link" href="#">
+                <NavLink to="/" className="nav-link">
                   My Dashboard
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/notebook" className="nav-link" href="#">
+                <NavLink to="/" className="nav-link">
                   My Notebook
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/faq" className="nav-link" href="#">
+                <NavLink to="/" className="nav-link">
                   FAQ
                 </NavLink>
               </li>

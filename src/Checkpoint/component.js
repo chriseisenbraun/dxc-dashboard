@@ -8,7 +8,7 @@ export class Checkpoint extends Component {
 
     return (
       <div className="container checkpoint">
-        <div className="row d-flex justify-content-between">
+        <div className="row d-flex">
 
             <div className="col checkpoint-icon-wrap">
               <svg className="checkpoint-icon"
