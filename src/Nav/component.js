@@ -10,7 +10,7 @@ export class Nav extends Component {
         <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
           <NavLink to="/" className="navbar-brand">
             <img src={logo} alt="" className="welcome__img-logo"/>
-              <span className="navbar__onboarding">Onboarding Experience</span>
+              <span className="navbar__onboarding">Sales Onboarding Experience</span>
           </NavLink>
           <button
             className="navbar-toggler"
