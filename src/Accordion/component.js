@@ -1,10 +1,27 @@
 import React, {Component} from "react";
 import './Accordion.css'
-import { AccordionHeader } from "../AccordionHeader";
+import '../Checkpoint/Checkpoint.css'
+import {AccordionHeader} from "../AccordionHeader";
 
-import image25Play from "./25-play.jpg";
+import image25 from "./25-play.jpg";
 import image1 from "./1.jpg";
 import image3 from "./3.jpg";
+import image4 from "./4-player.jpg";
+import image5 from "./5.jpg";
+import image6 from "./6.jpg";
+import image7 from "./7.jpg";
+
+import image8 from "./8.jpg";
+import image9 from "./9-player.jpg";
+import image10 from "./10.jpg";
+import image11 from "./11-player.jpg";
+import image12 from "./12.jpg";
+import image13 from "./13.jpg";
+import image14 from "./14.jpg";
+import image15 from "./15-player.jpg";
+import image16 from "./16.jpg";
+import image17 from "./17.jpg";
+import image19 from "./19-player.jpg";
 
 export class Accordion extends Component {
 
@@ -29,158 +46,913 @@ export class Accordion extends Component {
     inProgress5: 'In Progress 5',
     complete5: 'Complete 5',
 
-    svgNotChecked: <svg className="ep-todo-svg svg-circle" viewBox="0 0 301 301" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z" fill-rule="nonzero" stroke="#ff0" stroke-width=".15" transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
+    svgNotChecked: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+      d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+      fill-rule="nonzero"
+      stroke="#ff0"
+      stroke-width=".15"
+      transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
 
-    svgNotChecked2: <svg className="ep-todo-svg svg-circle" viewBox="0 0 301 301" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z" fill-rule="nonzero" stroke="#ff0" stroke-width=".15" transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
+    svgNotChecked2: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+      d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+      fill-rule="nonzero"
+      stroke="#ff0"
+      stroke-width=".15"
+      transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
 
-    svgNotChecked3: <svg className="ep-todo-svg svg-circle" viewBox="0 0 301 301" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z" fill-rule="nonzero" stroke="#ff0" stroke-width=".15" transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
+    svgNotChecked3: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+      d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+      fill-rule="nonzero"
+      stroke="#ff0"
+      stroke-width=".15"
+      transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
+
+    svgNotChecked4: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotChecked5: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotChecked6: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotChecked7: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE2C1: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE2C2: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE2C3: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+svgNotCheckedE2C4 : <svg
+  className="ep-todo-svg svg-circle"
+  viewBox="0 0 301 301"
+  xmlns="http://www.w3.org/2000/svg"
+  fill-rule="evenodd"
+  clip-rule="evenodd"
+  stroke-linejoin="round"
+  stroke-miterlimit="1.414"><path
+  d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+  fill-rule="nonzero"
+  stroke="#ff0"
+  stroke-width=".15"
+  transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
+
+    svgNotCheckedE2C5: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE2C6: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+     svgNotCheckedE2C7: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+        // EP 3
+
+    svgNotCheckedE3C1: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+svgNotCheckedE3C2 : <svg
+  className="ep-todo-svg svg-circle"
+  viewBox="0 0 301 301"
+  xmlns="http://www.w3.org/2000/svg"
+  fill-rule="evenodd"
+  clip-rule="evenodd"
+  stroke-linejoin="round"
+  stroke-miterlimit="1.414"><path
+  d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+  fill-rule="nonzero"
+  stroke="#ff0"
+  stroke-width=".15"
+  transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
+
+    svgNotCheckedE3C3: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+svgNotCheckedE3C4 : <svg
+  className="ep-todo-svg svg-circle"
+  viewBox="0 0 301 301"
+  xmlns="http://www.w3.org/2000/svg"
+  fill-rule="evenodd"
+  clip-rule="evenodd"
+  stroke-linejoin="round"
+  stroke-miterlimit="1.414"><path
+  d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+  fill-rule="nonzero"
+  stroke="#ff0"
+  stroke-width=".15"
+  transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
+
+    svgNotCheckedE3C5: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE3C6: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+svgNotCheckedE3C7 : <svg
+  className="ep-todo-svg svg-circle"
+  viewBox="0 0 301 301"
+  xmlns="http://www.w3.org/2000/svg"
+  fill-rule="evenodd"
+  clip-rule="evenodd"
+  stroke-linejoin="round"
+  stroke-miterlimit="1.414"><path
+  d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+  fill-rule="nonzero"
+  stroke="#ff0"
+  stroke-width=".15"
+  transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
+
+  // EP 4
+
+    svgNotCheckedE4C1: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE4C2: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE4C3: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE4C4: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE4C5: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE4C6: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE4C7: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+        // EP 5
+
+    svgNotCheckedE5C1: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE5C2: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE5C3: <svg
+  className="ep-todo-svg svg-circle"
+  viewBox="0 0 301 301"
+  xmlns="http://www.w3.org/2000/svg"
+  fill-rule="evenodd"
+  clip-rule="evenodd"
+  stroke-linejoin="round"
+  stroke-miterlimit="1.414"><path
+  d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+  fill-rule="nonzero"
+  stroke="#ff0"
+  stroke-width=".15"
+  transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
+
+    svgNotCheckedE5C4: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE5C5: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE5C6: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
+
+    svgNotCheckedE5C7: <svg
+      className="ep-todo-svg svg-circle"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+        d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+        fill-rule="nonzero"
+        stroke="#ff0"
+        stroke-width=".15"
+        transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)" /></svg>,
 
     // TO DO ADD svgChecked2-* states
 
-    svgChecked: <svg className="ep-todo-svg svg-checkmark-blue" viewBox="0 0 301 301" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z" fill-rule="nonzero" stroke="#49d3ff" stroke-width=".15" transform="matrix(6.78733 0 0 6.78733 -1283.663 -447.464)"/><path d="M226.873 87.531l-93.984 125.937L84.85 165.43" fill="none" stroke="#49d3ff" stroke-width="14" stroke-linecap="round" stroke-miterlimit="1.5"/></svg>,
+    svgChecked: <svg
+      className="ep-todo-svg svg-checkmark-blue"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+      d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+      fill-rule="nonzero"
+      stroke="#49d3ff"
+      stroke-width=".15"
+      transform="matrix(6.78733 0 0 6.78733 -1283.663 -447.464)"/><path
+      d="M226.873 87.531l-93.984 125.937L84.85 165.43"
+      fill="none"
+      stroke="#49d3ff"
+      stroke-width="14"
+      stroke-linecap="round"
+      stroke-miterlimit="1.5"/></svg>,
 
-    svgCircle: <svg className="ep-todo-svg svg-circle" viewBox="0 0 301 301" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z" fill-rule="nonzero" stroke="#ff0" stroke-width=".15" transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
+    // svgCircle: <svg
+    //   className="ep-todo-svg svg-circle"
+    //   viewBox="0 0 301 301"
+    //   xmlns="http://www.w3.org/2000/svg"
+    //   fill-rule="evenodd"
+    //   clip-rule="evenodd"
+    //   stroke-linejoin="round"
+    //   stroke-miterlimit="1.414"><path
+    //   d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+    //   fill-rule="nonzero"
+    //   stroke="#ff0"
+    //   stroke-width=".15"
+    //   transform="matrix(6.78733 0 0 6.78733 -1283.659 -447.464)"/></svg>,
 
-    svgInProgress: <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M150 0C67.2 0 0 67.2 0 150s67.2 150 150 150 150-67.2 150-150S232.8 0 150 0zm0 12c76.2 0 138 61.8 138 138s-61.8 138-138 138S12 226.2 12 150 73.8 12 150 12zM72 156h78V42h12v126H72v-12z"/></svg>,
+    svgInProgress: <svg
+      className="ep-todo-svg"
+      viewBox="0 0 300 300"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+      d="M150 0C67.2 0 0 67.2 0 150s67.2 150 150 150 150-67.2 150-150S232.8 0 150 0zm0 12c76.2 0 138 61.8 138 138s-61.8 138-138 138S12 226.2 12 150 73.8 12 150 12zM72 156h78V42h12v126H72v-12z"/></svg>,
 
-    svgNotStarted: <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z" />
+    svgNotStarted: <svg
+      className="ep-todo-svg"
+      viewBox="0 0 300 300"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+      d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z"/>
     </svg>,
 
-    svgNotStarted2: <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z" />
+    svgNotStarted2: <svg
+      className="ep-todo-svg"
+      viewBox="0 0 300 300"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+      d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z"/>
     </svg>,
 
-    svgNotStarted3: <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z" />
+    svgNotStarted3: <svg
+      className="ep-todo-svg"
+      viewBox="0 0 300 300"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+      d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z"/>
     </svg>,
 
-    svgNotStarted4: <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z" />
+    svgNotStarted4: <svg
+      className="ep-todo-svg"
+      viewBox="0 0 300 300"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+      d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z"/>
     </svg>,
 
-    svgNotStarted5: <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z" />
+    svgNotStarted5: <svg
+      className="ep-todo-svg"
+      viewBox="0 0 300 300"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+      d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z"/>
     </svg>,
 
-    svgComplete: <svg  className="ep-todo-svg" viewBox="0 0 301 301" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z" fill-rule="nonzero" stroke="#c9c9ce" stroke-width=".15" transform="matrix(6.78733 0 0 6.78733 -1283.663 -447.464)"/><path d="M226.873 87.531l-93.984 125.937L84.85 165.43" fill="none" stroke="#050505" stroke-width="14" stroke-linecap="round" stroke-miterlimit="1.5"/></svg>,
+    svgComplete: <svg
+      className="ep-todo-svg"
+      viewBox="0 0 301 301"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><path
+      d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
+      fill-rule="nonzero"
+      stroke="#c9c9ce"
+      stroke-width=".15"
+      transform="matrix(6.78733 0 0 6.78733 -1283.663 -447.464)"/><path
+      d="M226.873 87.531l-93.984 125.937L84.85 165.43"
+      fill="none"
+      stroke="#050505"
+      stroke-width="14"
+      stroke-linecap="round"
+      stroke-miterlimit="1.5"/></svg>,
 
+    // Badges
+
+    svgBadgeNotStarted1: <svg
+      className="checkpoint-icon"
+      viewBox="0 0 300 300"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><circle
+      cx="7099"
+      cy="798"
+      r="80"
+      fill="#ccc"
+      transform="translate(-13160.627 -1346.246) scale(1.875)"/><path
+      d="M112.498 146.316c3.944-.025 8.587.094 13.6.488 15.237 1.194 31.331 9.45 46.125 9.45 13.106 0 27.775-7.031 27.775-7.031V81.254s-16.013 9.375-28.65 9.375c-16.856 0-33.719-9.375-50.575-9.375-6.925 0-20.775 2.344-20.775 2.344V212.51c0 3.5 2.8 6.244 6.25 6.244a6.231 6.231 0 0 0 6.25-6.244v-66.194z"
+      fill="#fff"/></svg>,
+
+    svgBadgeNotStarted2: <svg
+      className="checkpoint-icon"
+      viewBox="0 0 300 300"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><circle
+        cx="7099"
+        cy="798"
+        r="80"
+        fill="#ccc"
+        transform="translate(-13160.627 -1346.246) scale(1.875)" /><path
+        d="M112.498 146.316c3.944-.025 8.587.094 13.6.488 15.237 1.194 31.331 9.45 46.125 9.45 13.106 0 27.775-7.031 27.775-7.031V81.254s-16.013 9.375-28.65 9.375c-16.856 0-33.719-9.375-50.575-9.375-6.925 0-20.775 2.344-20.775 2.344V212.51c0 3.5 2.8 6.244 6.25 6.244a6.231 6.231 0 0 0 6.25-6.244v-66.194z"
+        fill="#fff" /></svg>,
+
+    svgBadgeNotStarted3: <svg
+      className="checkpoint-icon"
+      viewBox="0 0 300 300"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><circle
+        cx="7099"
+        cy="798"
+        r="80"
+        fill="#ccc"
+        transform="translate(-13160.627 -1346.246) scale(1.875)" /><path
+        d="M112.498 146.316c3.944-.025 8.587.094 13.6.488 15.237 1.194 31.331 9.45 46.125 9.45 13.106 0 27.775-7.031 27.775-7.031V81.254s-16.013 9.375-28.65 9.375c-16.856 0-33.719-9.375-50.575-9.375-6.925 0-20.775 2.344-20.775 2.344V212.51c0 3.5 2.8 6.244 6.25 6.244a6.231 6.231 0 0 0 6.25-6.244v-66.194z"
+        fill="#fff" /></svg>,
+
+     svgBadgeNotStarted4: <svg
+      className="checkpoint-icon"
+      viewBox="0 0 300 300"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><circle
+        cx="7099"
+        cy="798"
+        r="80"
+        fill="#ccc"
+        transform="translate(-13160.627 -1346.246) scale(1.875)" /><path
+        d="M112.498 146.316c3.944-.025 8.587.094 13.6.488 15.237 1.194 31.331 9.45 46.125 9.45 13.106 0 27.775-7.031 27.775-7.031V81.254s-16.013 9.375-28.65 9.375c-16.856 0-33.719-9.375-50.575-9.375-6.925 0-20.775 2.344-20.775 2.344V212.51c0 3.5 2.8 6.244 6.25 6.244a6.231 6.231 0 0 0 6.25-6.244v-66.194z"
+        fill="#fff" /></svg>,
+
+    svgBadgeNotStarted5: <svg
+      className="checkpoint-icon"
+      viewBox="0 0 300 300"
+      xmlns="http://www.w3.org/2000/svg"
+      fill-rule="evenodd"
+      clip-rule="evenodd"
+      stroke-linejoin="round"
+      stroke-miterlimit="1.414"><circle
+        cx="7099"
+        cy="798"
+        r="80"
+        fill="#ccc"
+        transform="translate(-13160.627 -1346.246) scale(1.875)" /><path
+        d="M112.498 146.316c3.944-.025 8.587.094 13.6.488 15.237 1.194 31.331 9.45 46.125 9.45 13.106 0 27.775-7.031 27.775-7.031V81.254s-16.013 9.375-28.65 9.375c-16.856 0-33.719-9.375-50.575-9.375-6.925 0-20.775 2.344-20.775 2.344V212.51c0 3.5 2.8 6.244 6.25 6.244a6.231 6.231 0 0 0 6.25-6.244v-66.194z"
+        fill="#fff" /></svg>,
+
+    svgBadgeComplete: <svg
+        className="checkpoint-icon"
+        viewBox="0 0 300 300"
+        xmlns="http://www.w3.org/2000/svg"
+        fill-rule="evenodd"
+        clip-rule="evenodd"
+        stroke-linejoin="round"
+        stroke-miterlimit="1.414"><circle
+        cx="7099"
+        cy="798"
+        r="80"
+        fill="#2e8c5a"
+        transform="translate(-13160.627 -1346.246) scale(1.875)"/><path
+        d="M112.498 146.316c3.944-.025 8.587.094 13.6.488 15.237 1.194 31.331 9.45 46.125 9.45 13.106 0 27.775-7.031 27.775-7.031V81.254s-16.013 9.375-28.65 9.375c-16.856 0-33.719-9.375-50.575-9.375-6.925 0-20.775 2.344-20.775 2.344V212.51c0 3.5 2.8 6.244 6.25 6.244a6.231 6.231 0 0 0 6.25-6.244v-66.194z"
+        fill="#fff"/></svg>
   }
 
-handleClickE1 = (e) => {
-  this.setState({
-  notStarted: this.state.inProgress,
-  svgNotStarted: this.state.svgInProgress,
-  svgNotChecked: this.state.svgChecked
-});
+// EP 1 chapter checkmarks
+
+  handleClickE1C1 = (e) => {
+    this.setState({
+      notStarted: this.state.inProgress,
+      svgNotStarted: this.state.svgInProgress,
+      svgNotChecked: this.state.svgChecked});
+  }
+
+  handleClickE1C2 = (e) => {
+    this.setState({svgNotChecked2: this.state.svgChecked});
+  }
+  handleClickE1C3 = (e) => {
+    this.setState({svgNotChecked3: this.state.svgChecked});
+  }
+  handleClickE1C4 = (e) => {
+    this.setState({svgNotChecked4: this.state.svgChecked});
+
+  }
+  handleClickE1C5 = (e) => {
+    this.setState({svgNotChecked5: this.state.svgChecked});
+  }
+
+  handleClickE1C6 = (e) => {
+    this.setState({svgNotChecked6: this.state.svgChecked});
+  }
+
+  handleClickE1C7 = (e) => {
+    this.setState({svgNotChecked7: this.state.svgChecked});
+  }
+
+  // EP 2 chapter checkmarks
+
+  // handleClickE2 = (e) => {
+  //   this.setState({ notStarted2: this.state.inProgress, svgNotStarted2: this.state.svgInProgress });
+  // }
+
+  handleClickE2C1 = (e) => {
+this.setState({notStarted2: this.state.inProgress, svgNotStarted2: this.state.svgInProgress,svgNotCheckedE2C1: this.state.svgChecked});
+  }
+
+  handleClickE2C2 = (e) => {
+    this.setState({svgNotCheckedE2C2: this.state.svgChecked});
+  }
+  handleClickE2C3 = (e) => {
+    this.setState({ svgNotCheckedE2C3: this.state.svgChecked });
+  }
+  handleClickE2C4 = (e) => {
+    this.setState({svgNotCheckedE2C4: this.state.svgChecked});
+
+  }
+  handleClickE2C5 = (e) => {
+    this.setState({svgNotCheckedE2C5: this.state.svgChecked});
+  }
+
+  handleClickE2C6 = (e) => {
+    this.setState({svgNotCheckedE2C6: this.state.svgChecked});
+  }
+
+  handleClickE2C7 = (e) => {
+    this.setState({svgNotCheckedE2C7: this.state.svgChecked});
+  }
+
+  // EP 3 chapter checkmarks
+
+  // handleClickE3 = (e) => {
+  //   this.setState({ notStarted3: this.state.inProgress, svgNotStarted3: this.state.svgInProgress });
+  // }
+
+  handleClickE3C1 = (e) => {
+this.setState({notStarted3: this.state.inProgress, svgNotStarted3: this.state.svgInProgress, svgNotCheckedE3C1: this.state.svgChecked});
+  }
+
+  handleClickE3C2 = (e) => {
+    this.setState({ svgNotCheckedE3C2: this.state.svgChecked });
+  }
+  handleClickE3C3 = (e) => {
+    this.setState({ svgNotCheckedE3C3: this.state.svgChecked });
+  }
+  handleClickE3C4 = (e) => {
+    this.setState({ svgNotCheckedE3C4: this.state.svgChecked });
+
+  }
+  handleClickE3C5 = (e) => {
+    this.setState({ svgNotCheckedE3C5: this.state.svgChecked });
+  }
+
+  handleClickE3C6 = (e) => {
+    this.setState({ svgNotCheckedE3C6: this.state.svgChecked });
+  }
+
+  handleClickE3C7 = (e) => {
+    this.setState({ svgNotCheckedE3C7: this.state.svgChecked });
+  }
+
+  // EP 4 chapter checkmarks
+
+  // handleClickE4 = (e) => {
+  //   this.setState({ notStarted4: this.state.inProgress, svgNotStarted4: this.state.svgInProgress });
+  // }
+
+  handleClickE4C1 = (e) => {
+this.setState({notStarted4: this.state.inProgress, svgNotStarted4: this.state.svgInProgress ,svgNotCheckedE4C1: this.state.svgChecked});
+  }
+
+  handleClickE4C2 = (e) => {
+    this.setState({ svgNotCheckedE4C2: this.state.svgChecked });
+  }
+  handleClickE4C3 = (e) => {
+    this.setState({ svgNotCheckedE4C3: this.state.svgChecked });
+  }
+  handleClickE4C4 = (e) => {
+    this.setState({ svgNotCheckedE4C4: this.state.svgChecked });
+
+  }
+  handleClickE4C5 = (e) => {
+    this.setState({ svgNotCheckedE4C5: this.state.svgChecked });
+  }
+
+  handleClickE4C6 = (e) => {
+    this.setState({ svgNotCheckedE4C6: this.state.svgChecked });
+  }
+
+  handleClickE4C7 = (e) => {
+    this.setState({ svgNotCheckedE4C7: this.state.svgChecked });
+  }
+
+// EP 5 chapter checkmarks
+
+// handleClickE5 = (e) => {
+//     this.setState({ notStarted5: this.state.inProgress, svgNotStarted5: this.state.svgInProgress });
+//   }
+
+handleClickE5C1 = (e) => {
+  this.setState({ notStarted5: this.state.inProgress, svgNotStarted5: this.state.svgInProgress, svgNotCheckedE5C1: this.state.svgChecked});
 }
 
-handleClickE1C2 = (e) => {
-  this.setState({
-  svgNotChecked2: this.state.svgChecked
-});
+handleClickE5C2 = (e) => {
+  this.setState({svgNotCheckedE5C2: this.state.svgChecked});
 }
-handleClickE1C3 = (e) => {
-  this.setState({
-  svgNotChecked3: this.state.svgChecked
-});
+handleClickE5C3 = (e) => {
+  this.setState({svgNotCheckedE5C3: this.state.svgChecked});
 }
-handleClickE1C4 = (e) => {
-  this.setState({
-  svgNotChecked4: this.state.svgChecked
-});
+handleClickE5C4 = (e) => {
+  this.setState({svgNotCheckedE5C4: this.state.svgChecked});
 
 }
-handleClickE1C5 = (e) => {
-  this.setState({
-  svgNotChecked5: this.state.svgChecked
-});
+handleClickE5C5 = (e) => {
+  this.setState({svgNotCheckedE5C5: this.state.svgChecked});
 }
 
-handleClickE1C6 = (e) => {
-  this.setState({
-  svgNotChecked6: this.state.svgChecked
-});
+handleClickE5C6 = (e) => {
+  this.setState({svgNotCheckedE5C6: this.state.svgChecked});
 }
 
-handleClickE1C7 = (e) => {
-  this.setState({
-  svgNotChecked7: this.state.svgChecked
-});
+handleClickE5C7 = (e) => {
+  this.setState({svgNotCheckedE5C7: this.state.svgChecked});
 }
 
-handleClickE2 = (e) => {
-  this.setState({
-  notStarted2: this.state.inProgress,
-  svgNotStarted2: this.state.svgInProgress
-});
-}
+  // FINISHED - LAST CHAPTER OF EACH EP
 
-// START
-handleClickE2C1 = (e) => {
-  this.setState({
-  svgNotChecked8: this.state.svgChecked
-});
-}
+  handleClickFinishE1 = (e) => {
+    this.setState({
+      notStarted: this.state.complete, svgNotStarted: this.state.svgComplete, svgNotChecked7: this.state.svgChecked,
+      svgBadgeNotStarted1: this.state.svgBadgeComplete,
+});}
 
-handleClickE3 = (e) => {
-  this.setState({
-  notStarted3: this.state.inProgress,
-  svgNotStarted3: this.state.svgInProgress
-});
-}
+  handleClickFinishE2 = (e) => {
+    this.setState({ notStarted2: this.state.complete, svgNotStarted2: this.state.svgComplete, svgNotCheckedE2C5: this.state.svgChecked, svgBadgeNotStarted2: this.state.svgBadgeComplete});
+  }
 
-handleClickE4 = (e) => {
-  this.setState({
-  notStarted4: this.state.inProgress,
-  svgNotStarted4: this.state.svgInProgress
-});
-}
+  handleClickFinishE3 = (e) => {
+this.setState({notStarted3: this.state.complete, svgNotStarted3: this.state.svgComplete, svgNotCheckedE3C4: this.state.svgChecked, svgBadgeNotStarted3: this.state.svgBadgeComplete});
+  }
 
-handleClickE5 = (e) => {
-  this.setState({
-  notStarted5: this.state.inProgress,
-  svgNotStarted5: this.state.svgInProgress
-});
-}
+  handleClickFinishE4 = (e) => {
+    this.setState({ notStarted4: this.state.complete, svgNotStarted4: this.state.svgComplete, svgNotCheckedE45: this.state.svgChecked, svgBadgeNotStarted4: this.state.svgBadgeComplete});
+  }
 
-handleClickFinishE1 = (e) => {
-  this.setState({
-  notStarted: this.state.complete,
-  svgNotStarted: this.state.svgComplete
-});
-}
-
-handleClickFinishE2 = (e) => {
-  this.setState({
-  notStarted2: this.state.complete,
-  svgNotStarted2: this.state.svgComplete
-});
-}
-
-handleClickFinishE3 = (e) => {
-  this.setState({
-  notStarted3: this.state.complete,
-  svgNotStarted3: this.state.svgComplete
-});
-}
-
-handleClickFinishE4 = (e) => {
-  this.setState({
-  notStarted4: this.state.complete,
-  svgNotStarted4: this.state.svgComplete
-});
-}
-
-handleClickFinishE5 = (e) => {
-  this.setState({
-  notStarted5: this.state.complete,
-  svgNotStarted5: this.state.svgComplete
-});
-}
+  handleClickFinishE5 = (e) => {
+this.setState({notStarted5: this.state.complete, svgNotStarted5: this.state.svgComplete, svgNotCheckedE5E4: this.state.svgChecked, svgBadgeNotStarted5: this.state.svgBadgeComplete});
+  }
 
   render() {
 
     return (
+      <>
       <div className="container accordion-wrap mb-5">
         <div id="accordion">
 
-          <AccordionHeader name="Episode name" length="Episode length" status="Status" />
+          <AccordionHeader name="Episode name" length="Episode length" status="Status"/>
 
           <div className="card">
             <div className="card-header" id="headingOne">
@@ -194,7 +966,7 @@ handleClickFinishE5 = (e) => {
                         data-target="#collapseOne"
                         aria-expanded="true"
                         aria-controls="collapseOne">
-                         Welcome to your role
+                        Welcome to your role
                       </button>
                     </span>
                   </div>
@@ -205,7 +977,7 @@ handleClickFinishE5 = (e) => {
                   <div className="col">
                     <span className="ep-text-status">
                       <span className="ep-todo-span click-m1-e1">
-                      {this.state.svgNotStarted}
+                        {this.state.svgNotStarted}
 
                       </span>{this.state.notStarted}</span>
                   </div>
@@ -237,7 +1009,7 @@ handleClickFinishE5 = (e) => {
                               href="#list-m1-e1"
                               role="tab"
                               aria-controls="home"
-                              onClick={this.handleClickE1}>
+                              onClick={this.handleClickE1C1}>
                               <span className="ep-todo-span">
 
                                 {this.state.svgNotChecked}
@@ -253,7 +1025,7 @@ handleClickFinishE5 = (e) => {
                               aria-controls="profile"
                               onClick={this.handleClickE1C2}>
                               <span className="ep-todo-span">
-                              {this.state.svgNotChecked2}
+                                {this.state.svgNotChecked2}
 
                               </span>How will I spend my time?</a>
                             <a
@@ -266,7 +1038,7 @@ handleClickFinishE5 = (e) => {
                               onClick={this.handleClickE1C3}>
                               <span className="ep-todo-span">
 
-                              {this.state.svgNotChecked3}
+                                {this.state.svgNotChecked3}
 
                               </span>What does this onboarding look like?</a>
                             <a
@@ -275,9 +1047,11 @@ handleClickFinishE5 = (e) => {
                               data-toggle="list"
                               href="#list-m1-e4"
                               role="tab"
-                              aria-controls="settings">
+                              aria-controls="settings"
+                              onClick={this.handleClickE1C4}>
                               <span className="ep-todo-span">
-                              {this.state.svgCircle}
+
+                                  {this.state.svgNotChecked4}
 
                               </span>Where do I go for help (internal sites/people)?</a>
                             <a
@@ -286,9 +1060,11 @@ handleClickFinishE5 = (e) => {
                               data-toggle="list"
                               href="#list-m1-e5"
                               role="tab"
-                              aria-controls="settings">
+                              aria-controls="settings"
+                              onClick={this.handleClickE1C5}>
                               <span className="ep-todo-span">
-                              {this.state.svgCircle}
+
+                                  {this.state.svgNotChecked5}
 
                               </span>Access I need (SFDC and others)</a>
                             <a
@@ -297,9 +1073,11 @@ handleClickFinishE5 = (e) => {
                               data-toggle="list"
                               href="#list-m1-e6"
                               role="tab"
-                              aria-controls="settings">
+                              aria-controls="settings"
+                              onClick={this.handleClickE1C6}>
                               <span className="ep-todo-span">
-                                {this.state.svgCircle}
+
+                              {this.state.svgNotChecked6}
 
                               </span>Who are the people I need to know?</a>
                             <a
@@ -311,9 +1089,10 @@ handleClickFinishE5 = (e) => {
                               aria-controls="settings"
                               onClick={this.handleClickFinishE1}>
                               <span className="ep-todo-span">
-                                {this.state.svgCircle}
 
-                              </span>MWhat do I do first?</a>
+                                  {this.state.svgNotChecked7}
+
+                              </span>What do I do first?</a>
 
                           </div>
                         </div>
@@ -324,7 +1103,7 @@ handleClickFinishE5 = (e) => {
                               id="list-m1-e1"
                               role="tabpanel"
                               aria-labelledby="list-m1-e1-list">
-                              <img className="img-fluid" src={image25Play} alt=""/>
+                              <img className="img-fluid" src={image25} alt=""/>
 
                             </div>
                             <div
@@ -332,42 +1111,42 @@ handleClickFinishE5 = (e) => {
                               id="list-m1-e2"
                               role="tabpanel"
                               aria-labelledby="list-m1-e2-list">
-                              <img className="img-fluid" src={image1} alt="" />
+                              <img className="img-fluid" src={image1} alt=""/>
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m1-e3"
                               role="tabpanel"
                               aria-labelledby="list-m1-e3-list">
-                              <img className="img-fluid" src={image3} alt="" />
+                              <img className="img-fluid" src={image3} alt=""/>
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m1-e4"
                               role="tabpanel"
                               aria-labelledby="list-m1-e4-list">
-                              <img className="img-fluid" src={image3} alt="" />
+                              <img className="img-fluid" src={image4} alt=""/>
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m1-e5"
                               role="tabpanel"
                               aria-labelledby="list-m1-e5-list">
-                              <img className="img-fluid" src={image3} alt="" />
+                              <img className="img-fluid" src={image5} alt=""/>
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m1-e6"
                               role="tabpanel"
                               aria-labelledby="list-m1-e6-list">
-                              <img className="img-fluid" src={image3} alt="" />
+                              <img className="img-fluid" src={image6} alt=""/>
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m1-e7"
                               role="tabpanel"
                               aria-labelledby="list-m1-e7-list">
-                              <img className="img-fluid" src={image3} alt="" />
+                              <img className="img-fluid" src={image7} alt=""/>
                             </div>
                           </div>
                         </div>
@@ -396,7 +1175,7 @@ handleClickFinishE5 = (e) => {
                         data-target="#collapseTwo"
                         aria-expanded="true"
                         aria-controls="collapseTwo">
-                         Who is DXC?
+                        Who is DXC?
                       </button>
                     </span>
                   </div>
@@ -408,7 +1187,7 @@ handleClickFinishE5 = (e) => {
                   <div className="col">
                     <span className="ep-text-status">
                       <span className="ep-todo-span">
-                      {this.state.svgNotStarted2}
+                        {this.state.svgNotStarted2}
 
                       </span>{this.state.notStarted2}</span>
                   </div>
@@ -426,8 +1205,8 @@ handleClickFinishE5 = (e) => {
                 <div class="container-fluid">
                   <div class="row">
                     <div class="col-sm">
-                      <p className="mission-breadcrumb">Mission 1 / Ep 2: Who are we?</p>
-                      <h3>Who are we?</h3>
+                        <p className="mission-breadcrumb">Mission 1 / Ep 2: Who is DXC?</p>
+                        <h3>Who is DXC?</h3>
 
                       <div class="row">
                         <div class="col-sm col-md-4">
@@ -439,59 +1218,66 @@ handleClickFinishE5 = (e) => {
                               href="#list-m2-e1"
                               role="tab"
                               aria-controls="home"
-                              onClick={this.handleClickE2}>
+                              onClick={this.handleClickE2C1}>
                               <span className="ep-todo-span">
 
-                              {this.state.svgNotChecked3}
+                                {this.state.svgNotCheckedE2C1}
 
-                              </span>M1 E2 C1</a>
+                                </span>DXC Corporate Overview</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m2-e2-list"
                               data-toggle="list"
                               href="#list-m2-e2"
                               role="tab"
-                              aria-controls="profile">
+                              aria-controls="profile"
+                              onClick={this.handleClickE2C2}>
                               <span className="ep-todo-span">
 
-                                {this.state.svgCircle}
+                                  {this.state.svgNotCheckedE2C2}
 
-                              </span>M1 E2 C2</a>
+                              </span>DXC POV</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m2-e3-list"
                               data-toggle="list"
                               href="#list-m2-e3"
                               role="tab"
-                              aria-controls="messages">
+                              aria-controls="messages"
+                              onClick={this.handleClickE2C3}>
                               <span className="ep-todo-span">
 
-                              {this.state.svgCircle}
+                                  {this.state.svgNotCheckedE2C3}
 
-                              </span>M1 E2 C3</a>
+                                </span>DXC Differentiation Message</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m2-e4-list"
                               data-toggle="list"
                               href="#list-m2-e4"
                               role="tab"
-                              aria-controls="settings">
+                              aria-controls="settings"
+                                onClick={this.handleClickE2C4}>
                               <span className="ep-todo-span">
-                              {this.state.svgCircle}
 
-                              </span>M1 E2 C4</a>
+                                {this.state.svgNotCheckedE2C4}
+
+                              </span>Brand value/recognition</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m2-e5-list"
                               data-toggle="list"
                               href="#list-m2-e5"
                               role="tab"
-                              aria-controls="settings">
-                              <span className="ep-todo-span">
-                                {this.state.svgCircle}
+                              aria-controls="settings"
+                              onClick={this.handleClickFinishE2}>
 
-                                </span>M1 E2 C5</a>
-                            <a
+                              <span className="ep-todo-span">
+
+                                  {this.state.svgNotCheckedE2C5}
+
+                                </span>Selling a Service</a>
+                            {/* <a
                               class="list-group-item list-group-item-action"
                               id="list-m2-e6-list"
                               data-toggle="list"
@@ -501,8 +1287,8 @@ handleClickFinishE5 = (e) => {
                               <span className="ep-todo-span">
                                 {this.state.svgCircle}
 
-                              </span>M1 E2 C6</a>
-                            <a
+                              </span>M1 E2 C6</a> */}
+                            {/* <a
                               class="list-group-item list-group-item-action"
                               id="list-m2-e7-list"
                               data-toggle="list"
@@ -514,7 +1300,7 @@ handleClickFinishE5 = (e) => {
                               <span className="ep-todo-span">
                                 {this.state.svgCircle}
 
-                              </span>M1 E2 C7</a>
+                              </span>M1 E2 C7</a> */}
 
                           </div>
                         </div>
@@ -525,98 +1311,49 @@ handleClickFinishE5 = (e) => {
                               id="list-m2-e1"
                               role="tabpanel"
                               aria-labelledby="list-m2-e1-list">
-                              <iframe
-                                title="list-m2-e1"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/fU1eliXFmbo"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image8} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m2-e2"
                               role="tabpanel"
                               aria-labelledby="list-m2-e2-list">
-                              <iframe
-                                title="list-m2-e2"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/DdSBxX3Gmjo"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image14} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m2-e3"
                               role="tabpanel"
                               aria-labelledby="list-m2-e3-list">
-                              <iframe
-                                title="list-m2-e3"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/P24bH3nmOO0"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image9} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m2-e4"
                               role="tabpanel"
                               aria-labelledby="list-m2-e4-list">
-                              <iframe
-                                title="list-m2-e4"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/mYqkbU6pHeg"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image10} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m2-e5"
                               role="tabpanel"
                               aria-labelledby="list-m2-e5-list">
-                              <iframe
-                                title="list-m2-e5"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/RAj7OVrZTRA"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image15} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m2-e6"
                               role="tabpanel"
                               aria-labelledby="list-m2-e6-list">
-                              <iframe
-                                title="list-m2-e6"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/2qBZhMSEYcg"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image12} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m2-e7"
                               role="tabpanel"
                               aria-labelledby="list-m2-e7-list">
-                              <iframe
-                                title="list-m2-e7"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/bU2dZzRY-JU"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image13} alt="" />
                             </div>
                           </div>
                         </div>
@@ -656,7 +1393,7 @@ handleClickFinishE5 = (e) => {
                   <div className="col">
                     <span className="ep-text-status">
                       <span className="ep-todo-span">
-                      {this.state.svgNotStarted3}
+                        {this.state.svgNotStarted3}
 
                       </span>{this.state.notStarted3}</span>
                   </div>
@@ -687,46 +1424,53 @@ handleClickFinishE5 = (e) => {
                               href="#list-m3-e1"
                               role="tab"
                               aria-controls="home"
-                              onClick={this.handleClickE3}>
+                              onClick={this.handleClickE3C1}>
                               <span className="ep-todo-span">
 
-                                {this.state.svgCircle}
+                                  {this.state.svgNotCheckedE3C1}
 
-                              </span>E1 E3 C1</a>
+                                </span>Partner landscape overview</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m3-e2-list"
                               data-toggle="list"
                               href="#list-m3-e2"
                               role="tab"
-                              aria-controls="profile">
+                              aria-controls="profile"
+                                onClick={this.handleClickE3C2}>
                               <span className="ep-todo-span">
-                                {this.state.svgCircle}
 
-                              </span>E1 E3 C2</a>
+                                  {this.state.svgNotCheckedE3C2}
+
+                                </span>How do I engage with my partners?</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m3-e3-list"
                               data-toggle="list"
                               href="#list-m3-e3"
                               role="tab"
-                              aria-controls="messages">
-                              <span className="ep-todo-span">
-                              {this.state.svgCircle}
+                              aria-controls="messages"
+                              onClick={this.handleClickE3C3}>
 
-                              </span>E1 E3 C3</a>
+                              <span className="ep-todo-span">
+
+                                  {this.state.svgNotCheckedE3C3}
+
+                                </span>Working with my partners to get client meetings booked</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m3-e4-list"
                               data-toggle="list"
                               href="#list-m3-e4"
                               role="tab"
-                              aria-controls="settings">
+                              aria-controls="settings"
+                                onClick={this.handleClickFinishE3}>
                               <span className="ep-todo-span">
-                                {this.state.svgCircle}
 
-                              </span>E1 E3 C4</a>
-                            <a
+                                  {this.state.svgNotCheckedE3C4}
+
+                                </span>Value of the Partner Brand</a>
+                            {/* <a
                               class="list-group-item list-group-item-action"
                               id="list-m3-e5-list"
                               data-toggle="list"
@@ -736,8 +1480,8 @@ handleClickFinishE5 = (e) => {
                               <span className="ep-todo-span">
                                 {this.state.svgCircle}
 
-                              </span>E1 E3 C5</a>
-                            <a
+                              </span>E1 E3 C5</a> */}
+                            {/* <a
                               class="list-group-item list-group-item-action"
                               id="list-m3-e6-list"
                               data-toggle="list"
@@ -747,8 +1491,8 @@ handleClickFinishE5 = (e) => {
                               <span className="ep-todo-span">
                                 {this.state.svgCircle}
 
-                              </span>E1 E3 C6</a>
-                            <a
+                              </span>E1 E3 C6</a> */}
+                            {/* <a
                               class="list-group-item list-group-item-action"
                               id="list-m3-e7-list"
                               data-toggle="list"
@@ -759,7 +1503,7 @@ handleClickFinishE5 = (e) => {
                               <span className="ep-todo-span">
                                 {this.state.svgCircle}
 
-                              </span>E1 E3 C6</a>
+                              </span>E1 E3 C6</a> */}
 
                           </div>
                         </div>
@@ -770,98 +1514,49 @@ handleClickFinishE5 = (e) => {
                               id="list-m3-e1"
                               role="tabpanel"
                               aria-labelledby="list-m3-e1-list">
-                              <iframe
-                                title="list-m3-e1"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/fU1eliXFmbo"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image1} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m3-e2"
                               role="tabpanel"
                               aria-labelledby="list-m3-e2-list">
-                              <iframe
-                                title="list-m3-e2"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/DdSBxX3Gmjo"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image12} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m3-e3"
                               role="tabpanel"
                               aria-labelledby="list-m3-e3-list">
-                              <iframe
-                                title="list-m3-e3"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/P24bH3nmOO0"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image10} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m3-e4"
                               role="tabpanel"
                               aria-labelledby="list-m3-e4-list">
-                              <iframe
-                                title="list-m3-e4"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/mYqkbU6pHeg"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image3} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m3-e5"
                               role="tabpanel"
                               aria-labelledby="list-m3-e5-list">
-                              <iframe
-                                title="list-m3-e5"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/RAj7OVrZTRA"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image6} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m3-e6"
                               role="tabpanel"
                               aria-labelledby="list-m3-e6-list">
-                              <iframe
-                                title="list-m3-e6"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/2qBZhMSEYcg"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image9} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m3-e7"
                               role="tabpanel"
                               aria-labelledby="list-m3-e7-list">
-                              <iframe
-                                title="list-m3-e7"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/bU2dZzRY-JU"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image8} alt="" />
                             </div>
                           </div>
                         </div>
@@ -890,7 +1585,7 @@ handleClickFinishE5 = (e) => {
                         data-target="#collapseFour"
                         aria-expanded="true"
                         aria-controls="collapseFour">
-                        Sales 101
+                        DXC Sales 101
                       </button>
                     </span>
                   </div>
@@ -919,8 +1614,8 @@ handleClickFinishE5 = (e) => {
                 <div class="container-fluid">
                   <div class="row">
                     <div class="col-sm">
-                      <p className="mission-breadcrumb">Mission 1 / Ep 4: Sales 101</p>
-                      <h3>Sales 101</h3>
+                      <p className="mission-breadcrumb">Mission 1 / Ep 4: DXC Sales 101</p>
+                      <h3>DXC Sales 101</h3>
 
                       <div class="row">
                         <div class="col-sm col-md-4">
@@ -932,53 +1627,68 @@ handleClickFinishE5 = (e) => {
                               href="#list-m4-e1"
                               role="tab"
                               aria-controls="home"
-                              onClick={this.handleClickE4}>
+                              onClick={this.handleClickE4C1}>
                               <span className="ep-todo-span">
 
-                                {this.state.svgCircle}
+                                  {this.state.svgNotCheckedE4C1}
 
-                              </span>M1 E4 C1</a>
+                                </span>What is the DXC Sales Process?</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m4-e2-list"
                               data-toggle="list"
                               href="#list-m4-e2"
                               role="tab"
-                              aria-controls="profile">
+                              aria-controls="profile"
+                                onClick={this.handleClickE4C2}>
+
                               <span className="ep-todo-span">
-                                {this.state.svgCircle}
-                              </span>M1 E4 C2</a>
+
+                                  {this.state.svgNotCheckedE4C2}
+
+                                </span>Lead Generation at DXC</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m4-e3-list"
                               data-toggle="list"
                               href="#list-m4-e3"
                               role="tab"
-                              aria-controls="messages">
+                              aria-controls="messages"
+                                onClick={this.handleClickE4C3}>
+
                               <span className="ep-todo-span">
-                                {this.state.svgCircle}
-                              </span>What does this onboarding look like</a>
+
+                                  {this.state.svgNotCheckedE4C3}
+
+                                </span>Finding commonly used Sales Templates</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m4-e4-list"
                               data-toggle="list"
                               href="#list-m4-e4"
                               role="tab"
-                              aria-controls="settings">
+                              aria-controls="settings"
+                                onClick={this.handleClickE4C4}>
                               <span className="ep-todo-span">
-                                {this.state.svgCircle}
-                              </span>M1 E4 C3</a>
+
+                                  {this.state.svgNotCheckedE4C4}
+
+                                </span>Deal governance, your role, and your pursuit team</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m4-e5-list"
                               data-toggle="list"
                               href="#list-m4-e5"
                               role="tab"
-                              aria-controls="settings">
+                              aria-controls="settings"
+                                onClick={this.handleClickFinishE4}>
+
                               <span className="ep-todo-span">
-                                {this.state.svgCircle}
-                              </span>M1 E4 C4</a>
-                            <a
+
+                                  {this.state.svgNotCheckedE4C5}
+
+                                </span>Selling R&R and touchpoints</a>
+                            {/* <a
                               class="list-group-item list-group-item-action"
                               id="list-m4-e6-list"
                               data-toggle="list"
@@ -987,8 +1697,8 @@ handleClickFinishE5 = (e) => {
                               aria-controls="settings">
                               <span className="ep-todo-span">
                                 {this.state.svgCircle}
-                              </span>M1 E4 C5</a>
-                            <a
+                              </span>M1 E4 C5</a> */}
+                            {/* <a
                               class="list-group-item list-group-item-action"
                               id="list-m4-e7-list"
                               data-toggle="list"
@@ -997,8 +1707,8 @@ handleClickFinishE5 = (e) => {
                               aria-controls="settings"
                               onClick={this.handleClickFinishE4}>
                               <span className="ep-todo-span">
-                              {this.state.svgCircle}
-                              </span>M1 E4 C6</a>
+                                {this.state.svgCircle}
+                              </span>M1 E4 C6</a> */}
 
                           </div>
                         </div>
@@ -1009,72 +1719,37 @@ handleClickFinishE5 = (e) => {
                               id="list-m4-e1"
                               role="tabpanel"
                               aria-labelledby="list-m4-e1-list">
-                              <iframe
-                                title="list-m4-e1"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/fU1eliXFmbo"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image3} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m4-e2"
                               role="tabpanel"
                               aria-labelledby="list-m4-e2-list">
-                              <iframe
-                                title="list-m4-e2"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/DdSBxX3Gmjo"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image9} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m4-e3"
                               role="tabpanel"
                               aria-labelledby="list-m4-e3-list">
-                              <iframe
-                                title="list-m4-e3"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/P24bH3nmOO0"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image10} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m4-e4"
                               role="tabpanel"
                               aria-labelledby="list-m4-e4-list">
-                              <iframe
-                                title="list-m4-e4"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/mYqkbU6pHeg"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image6} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m4-e5"
                               role="tabpanel"
                               aria-labelledby="list-m4-e5-list">
-                              <iframe
-                                title="list-m4-e5"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/RAj7OVrZTRA"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image5} alt="" />
                             </div>
-                            <div
+                            {/* <div
                               class="tab-pane fade text-center"
                               id="list-m4-e6"
                               role="tabpanel"
@@ -1087,8 +1762,8 @@ handleClickFinishE5 = (e) => {
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            </div>
-                            <div
+                            </div> */}
+                            {/* <div
                               class="tab-pane fade text-center"
                               id="list-m4-e7"
                               role="tabpanel"
@@ -1101,7 +1776,7 @@ handleClickFinishE5 = (e) => {
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       </div>
@@ -1141,7 +1816,7 @@ handleClickFinishE5 = (e) => {
                     <span className="ep-text-status">
                       <span className="ep-todo-span">
 
-                         {this.state.svgNotStarted5}
+                        {this.state.svgNotStarted5}
 
                       </span>{this.state.notStarted5}</span>
 
@@ -1159,7 +1834,7 @@ handleClickFinishE5 = (e) => {
                 <div class="container-fluid">
                   <div class="row">
                     <div class="col-sm">
-                      <p className="mission-breadcrumb">Mission 1 / Ep 5: my Role 101</p>
+                      <p className="mission-breadcrumb">Mission 1 / Ep 5: My Role 101</p>
                       <h3>My Role 101</h3>
 
                       <div class="row">
@@ -1172,43 +1847,55 @@ handleClickFinishE5 = (e) => {
                               href="#list-m5-e1"
                               role="tab"
                               aria-controls="home"
-                              onClick={this.handleClickE5}>
+                              onClick={this.handleClickE5C1}>
                               <span className="ep-todo-span">
 
-                                {this.state.svgCircle}
+                                  {this.state.svgNotCheckedE5C1}
 
-                              </span>M1 E5 C1</a>
+                                </span>How do I navigate DXC to get what I need?</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m5-e2-list"
                               data-toggle="list"
                               href="#list-m5-e2"
                               role="tab"
-                              aria-controls="profile">
+                              aria-controls="profile"
+                              onClick={this.handleClickE5C2}>
+
                               <span className="ep-todo-span">
-                                {this.state.svgCircle}
-                              </span>M1 E5 C2</a>
+
+                                  {this.state.svgNotCheckedE5C2}
+
+                                </span>How do I find the people I need to know - and who are my resources? </a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m5-e3-list"
                               data-toggle="list"
                               href="#list-m5-e3"
                               role="tab"
-                              aria-controls="messages">
+                              aria-controls="messages"
+                                onClick={this.handleClickE5C3}>
+
                               <span className="ep-todo-span">
-                                {this.state.svgCircle}
-                              </span>M1 E5 C3</a>
+
+                                  {this.state.svgNotCheckedE5C3}
+
+                                </span>Who can I get to help me navigate DXC in the first months?</a>
                             <a
                               class="list-group-item list-group-item-action"
                               id="list-m5-e4-list"
                               data-toggle="list"
                               href="#list-m5-e4"
                               role="tab"
-                              aria-controls="settings">
+                              aria-controls="settings"
+                                onClick={this.handleClickFinishE5}>
+
                               <span className="ep-todo-span">
-                                {this.state.svgCircle}
-                              </span>M1 E5 C4</a>
-                            <a
+
+                                  {this.state.svgNotCheckedE5C4}
+
+                                </span>How do I get paid? </a>
+                            {/* <a
                               class="list-group-item list-group-item-action"
                               id="list-m5-e5-list"
                               data-toggle="list"
@@ -1217,8 +1904,8 @@ handleClickFinishE5 = (e) => {
                               aria-controls="settings">
                               <span className="ep-todo-span">
                                 {this.state.svgCircle}
-                              </span>M1 E5 C5</a>
-                            <a
+                              </span>M1 E5 C5</a> */}
+                            {/* <a
                               class="list-group-item list-group-item-action"
                               id="list-m5-e6-list"
                               data-toggle="list"
@@ -1227,8 +1914,8 @@ handleClickFinishE5 = (e) => {
                               aria-controls="settings">
                               <span className="ep-todo-span">
                                 {this.state.svgCircle}
-                              </span>M1 E5 C6</a>
-                            <a
+                              </span>M1 E5 C6</a> */}
+                            {/* <a
                               class="list-group-item list-group-item-action"
                               id="list-m5-e7-list"
                               data-toggle="list"
@@ -1237,8 +1924,8 @@ handleClickFinishE5 = (e) => {
                               aria-controls="settings"
                               onClick={this.handleClickFinishE5}>
                               <span className="ep-todo-span">
-                               {this.state.svgCircle}
-                              </span>M1 E5 C7</a>
+                                {this.state.svgCircle}
+                              </span>M1 E5 C7</a> */}
 
                           </div>
                         </div>
@@ -1249,58 +1936,30 @@ handleClickFinishE5 = (e) => {
                               id="list-m5-e1"
                               role="tabpanel"
                               aria-labelledby="list-m5-e1-list">
-                              <iframe
-                                title="list-m5-e1"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/fU1eliXFmbo"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image15} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m5-e2"
                               role="tabpanel"
                               aria-labelledby="list-m5-e2-list">
-                              <iframe
-                                title="list-m5-e2"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/DdSBxX3Gmjo"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image17} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m5-e3"
                               role="tabpanel"
                               aria-labelledby="list-m5-e3-list">
-                              <iframe
-                                title="list-m5-e3"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/P24bH3nmOO0"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image1} alt="" />
                             </div>
                             <div
                               class="tab-pane fade text-center"
                               id="list-m5-e4"
                               role="tabpanel"
                               aria-labelledby="list-m5-e4-list">
-                              <iframe
-                                title="list-m5-e4"
-                                width="560"
-                                height="315"
-                                src="https://www.youtube.com/embed/mYqkbU6pHeg"
-                                frameborder="0"
-                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
+                                <img className="img-fluid" src={image11} alt="" />
                             </div>
-                            <div
+                            {/* <div
                               class="tab-pane fade text-center"
                               id="list-m5-e5"
                               role="tabpanel"
@@ -1313,8 +1972,8 @@ handleClickFinishE5 = (e) => {
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            </div>
-                            <div
+                            </div> */}
+                            {/* <div
                               class="tab-pane fade text-center"
                               id="list-m5-e6"
                               role="tabpanel"
@@ -1327,8 +1986,8 @@ handleClickFinishE5 = (e) => {
                                 frameborder="0"
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen></iframe>
-                            </div>
-                            <div
+                            </div> */}
+                            {/* <div
                               class="tab-pane fade text-center"
                               id="list-m5-e7"
                               role="tabpanel"
@@ -1342,7 +2001,7 @@ handleClickFinishE5 = (e) => {
                                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                                 allowfullscreen
                                 id="videoMagic"></iframe>
-                            </div>
+                            </div> */}
                           </div>
                         </div>
                       </div>
@@ -1361,6 +2020,45 @@ handleClickFinishE5 = (e) => {
         </div>
         {/* End Accordion */}
       </div>
+
+       {/* Start Checkpoints */ }
+
+    <div className="container checkpoint">
+      <div className="row d-flex justify-content-between">
+
+        <div className="col checkpoint-icon-wrap">
+
+              {this.state.svgBadgeNotStarted1}
+
+        </div>
+
+        <div className="col checkpoint-icon-wrap">
+              {this.state.svgBadgeNotStarted2}
+
+        </div>
+
+        <div className="col checkpoint-icon-wrap">
+              {this.state.svgBadgeNotStarted3}
+
+        </div>
+
+        <div className="col checkpoint-icon-wrap">
+              {this.state.svgBadgeNotStarted4}
+
+        </div>
+
+        <div className="col checkpoint-icon-wrap">
+
+          {this.state.svgBadgeNotStarted5}
+
+        </div>
+
+      </div>
+    </div>
+
+    {/* End Checkpoints */ }
+
+      </>
 
     );
   }

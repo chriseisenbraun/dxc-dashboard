@@ -1,11 +1,9 @@
 .checkpoint-icon-wrap {
-  /* width: 10%; */
-  /* border: 1px solid red; */
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 
 .checkpoint-icon {
-  width: 80%;
+  width: 65%;
 }
