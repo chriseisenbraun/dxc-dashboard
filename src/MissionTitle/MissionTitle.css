@@ -1,6 +1,6 @@
 .mission-title__heading {
-  /* color: maroon; */
-  /* font-family: 'Oxygen-light'; */
+  font-family: 'Oxygen-light';
+  text-transform: uppercase;
 }
 
 .mission-title__heading-text {

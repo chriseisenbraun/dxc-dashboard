@@ -41,6 +41,7 @@
 .search-icon-wrap {
   width: 3rem;
   height: 2rem;
+  display: none;
 }
 
 svg.search-icon {

@@ -6,7 +6,7 @@
 
 .list-group-item.active {
   z-index: 2;
-  color: var(--yellow);
+  color: var(--blue-bright);
   background-color: var(--black);
   border-color: var(--black);
 }
@@ -44,7 +44,7 @@
   font-family: 'Dxc-Bold';
   /* font-weight: 900; */
   padding-bottom: 2rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.125);
+  border-top: none;
   padding-top: 1rem;
   margin-top: 1rem;
 }
@@ -57,6 +57,7 @@
   color: var(--black, #000);
   font-weight: 900;
   line-height: 0;
+  font-family: 'Dxc-bold';
 }
 
 .ep-text-status,
@@ -95,10 +96,20 @@
 /* BS4 override */
 .card-header {
   border-bottom: 0;
+  background-color: white;
 }
 
 .card {
-  border-radius: none;
+  border-radius: 0 !important;
+  border-color: black;
+}
+
+.card {
+  border-bottom: none;
+}
+
+.card:last-of-type {
+  border-bottom: 1px solid black;
 }
 
 .svg-circle {

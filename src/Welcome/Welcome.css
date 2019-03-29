@@ -1,8 +1,8 @@
 .welcome {
-  /* background-color: var(--black-light); */
+  background-color: #efefef;
   /* padding: 6rem 15rem; */
-  border-top: 1px solid black;
-  border-bottom: 1px solid black;
+  /* border-top: 1px solid black; */
+  /* border-bottom: 1px solid black; */
 }
 .welcome-flex {
   display: flex;
