@@ -47,11 +47,6 @@ body {
   padding-top: 20rem; /*  navbar if fixed, need to add spcace*/
 }
 
-main {
-  /* width: 80%; */
-  /* margin: 0 auto; */
-}
-
 h1,
 h2,
 h3 {
@@ -69,13 +64,15 @@ a {
   text-decoration: none;
 }
 
-/*  Override bs4 deafault max-width: 1140px
-To match DXC width 1330px */
+.checkpoint-text-wrap {
+  display: flex;
+  align-items: center;
+}
 
-@media (min-width: 1200px) {
-  main > .container {
-    /* max-width: 1330px; */
-    /* margin-left: 70px; */
-    /* margin-right: 70px; */
-  }
+.checkpoint-text {
+  font-size: 1.4rem;
+}
+
+.complete-text {
+  color: var(--blue-bright);
 }
