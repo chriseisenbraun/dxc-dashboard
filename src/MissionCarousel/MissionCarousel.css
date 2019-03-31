@@ -36,10 +36,9 @@
   /* background-color: rgba(#000, #000, #000, 1); */
 }
 
-.mission-carousel__link {
+.mission-carousel__link-1 {
   font-size: 1.4rem;
   color: white;
-  /* color: var(--yellow, #ffed00); */
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -48,17 +47,125 @@
   border-radius: 100%;
   overflow: hidden;
   justify-content: center;
-  /* opacity: 0.8; */
-  /* background-color: var(--blue-medium, #1c6176); */
-  background-color: var(--black-light);
+  background-image: url('./m1-inactive.png');
+  transition: all 0.2s ease-in-out;
+}
+
+.mission-carousel__link-1:hover {
+  background-image: url('./m1-active.png');
+  text-decoration: none;
+  color: white;
+}
+
+/* M2 */
+
+.mission-carousel__link-2 {
+  font-size: 1.4rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 100%;
+  overflow: hidden;
+  justify-content: center;
+  background-image: url('./m2-inactive.png');
+  transition: all 0.2s ease-in-out;
+}
+
+.mission-carousel__link-2:hover {
+  background-image: url('./m2-active.png');
+  text-decoration: none;
+  color: white;
+}
+
+/* M3 */
+
+.mission-carousel__link-3 {
+  font-size: 1.4rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 100%;
+  overflow: hidden;
+  justify-content: center;
+  background-image: url('./m3-inactive.png');
+  transition: all 0.2s ease-in-out;
+}
+
+.mission-carousel__link-3:hover {
+  background-image: url('./m3-active.png');
+  text-decoration: none;
+  color: white;
+}
+
+/* M4 */
+
+.mission-carousel__link-4 {
+  font-size: 1.4rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 100%;
+  overflow: hidden;
+  justify-content: center;
+  background-image: url('./m4-inactive.png');
+  transition: all 0.2s ease-in-out;
+}
+
+.mission-carousel__link-4:hover {
+  background-image: url('./m4-active.png');
+  text-decoration: none;
+  color: white;
+}
+
+/* M5 */
+
+.mission-carousel__link-5 {
+  font-size: 1.4rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 100%;
+  overflow: hidden;
+  justify-content: center;
+  background-image: url('./m5-inactive.png');
+  transition: all 0.2s ease-in-out;
+}
+
+.mission-carousel__link-5:hover {
+  background-image: url('./m5-active.png');
+  text-decoration: none;
+  color: white;
+}
+
+.mission-carousel__link {
+  font-size: 1.4rem;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 100%;
+  overflow: hidden;
+  justify-content: center;
+  background-image: url('./m1-inactive.png');
   transition: all 0.2s ease-in-out;
 }
 
 .mission-carousel__link:hover {
-  /* opacity: 0.8; */
-  /* background: var(--yellow, #ffed00); */
-  background-color: var(--blue-bright);
-  /* color: black; */
+  background-image: url('./m1-active.png');
 }
 
 .mission-carousel__list-item:hover .mission-carousel__link {
