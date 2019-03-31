@@ -3,26 +3,26 @@ import '../Accordion/Accordion.css';
 import '../Checkpoint/Checkpoint.css';
 import { AccordionHeader } from '../AccordionHeader';
 
-import image1 from './1.jpg';
-import image3 from './3.jpg';
-import image6 from './6.jpg';
-import image7 from './7.jpg';
+import image1 from './img/1.jpg';
+import image3 from './img/3.jpg';
+import image6 from './img/6.jpg';
+import image7 from './img/7.jpg';
 
-import image9 from './9-player.jpg';
-import image10 from './10.jpg';
-import image11 from './11-player.jpg';
-import image12 from './12.jpg';
-import image13 from './13.jpg';
-import image14 from './14.jpg';
-import image15 from './15-player.jpg';
-import image16 from './16.jpg';
-import image17 from './17.jpg';
-import image20 from './20.jpg';
-import image21 from './21.jpg';
-import image22 from './22-player.jpg';
-import image25 from './25.jpg';
+import image9 from './img/9-player.jpg';
+import image10 from './img/10.jpg';
+import image11 from './img/11-player.jpg';
+import image12 from './img/12.jpg';
+import image13 from './img/13.jpg';
+import image14 from './img/14.jpg';
+import image15 from './img/15-player.jpg';
+import image16 from './img/16.jpg';
+import image17 from './img/17.jpg';
+import image20 from './img/20.jpg';
+import image21 from './img/21.jpg';
+import image22 from './img/22-player.jpg';
+import image25 from './img/25.jpg';
 
-import m2CheckpointBadge from './m2-badge.png';
+import m2CheckpointBadge from './img/m2-badge.png';
 
 // VARS
 
@@ -81,59 +81,15 @@ let badgeComplete = <img src={m2CheckpointBadge} alt="" />;
 // Status icons in Chapter row
 
 let statusNotStarted = (
-  <svg
-    className="ep-todo-svg"
-    viewBox="0 0 300 300"
-    xmlns="http://www.w3.org/2000/svg"
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    stroke-linejoin="round"
-    stroke-miterlimit="1.414"
-  >
-    <path d="M150 0C66.818 0 0 66.816 0 150c0 83.181 66.818 150 150 150s150-66.819 150-150C300 66.816 233.182 0 150 0zm0 13.636c75 0 136.364 61.363 136.364 136.363S225 286.363 150 286.363 13.637 224.999 13.637 149.999 75 13.636 150 13.636zm6.818 61.363v68.182H225v13.636h-68.182V225h-13.636v-68.182H75v-13.636h68.182V74.999h13.636z" />
-  </svg>
+  <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M44.012 255.987c58.982 58.683 152.994 58.683 211.976 0 58.682-58.981 58.682-152.994 0-211.975-58.982-58.683-152.994-58.683-211.976 0-58.683 58.981-58.683 152.994 0 211.975zm9.88-9.88c-52.994-52.694-52.994-139.52 0-192.215 52.695-52.994 139.52-52.994 192.215 0 52.994 52.694 52.994 139.52 0 192.215-52.694 52.994-139.52 52.994-192.215 0zm38.323-47.904l48.204-48.204-48.204-48.203 9.581-9.58L150 140.418l48.203-48.204 9.581 9.58L159.581 150l48.203 48.204-9.58 9.58L150 159.58l-48.204 48.204-9.58-9.58v-.001z" fill="#b3b3b3"/></svg>
 );
 
 let statusInProgress = (
-  <svg
-    className="ep-todo-svg"
-    viewBox="0 0 300 300"
-    xmlns="http://www.w3.org/2000/svg"
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    stroke-linejoin="round"
-    stroke-miterlimit="1.414"
-  >
-    <path d="M150 0C67.2 0 0 67.2 0 150s67.2 150 150 150 150-67.2 150-150S232.8 0 150 0zm0 12c76.2 0 138 61.8 138 138s-61.8 138-138 138S12 226.2 12 150 73.8 12 150 12zM72 156h78V42h12v126H72v-12z" />
-  </svg>
+  <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M0 150c.212 83.262 66.738 149.788 150 150 83.262-.212 149.788-66.738 150-150C299.788 66.738 233.262.212 150 0 66.738.212.212 66.737 0 150zm13.983 0C13.77 75.212 75.213 13.771 150 13.983 224.788 13.77 286.229 75.212 286.017 150c.212 74.788-61.23 136.229-136.017 136.016C75.212 286.23 13.771 224.788 13.983 150zM75 143.22H225v13.56H75v-13.56z"/></svg>
 );
 
 let statusComplete = (
-  <svg
-    className="ep-todo-svg"
-    viewBox="0 0 301 301"
-    xmlns="http://www.w3.org/2000/svg"
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    stroke-linejoin="round"
-    stroke-miterlimit="1.414"
-  >
-    <path
-      d="M211.3 68c11.1 0 20.1 9 20.1 20.1 0 11.1-9 20.1-20.1 20.1-11.1 0-20.1-9-20.1-20.1-.1-11.1 9-20.1 20.1-20.1m0-2c-12.2 0-22.1 9.9-22.1 22.1 0 12.2 9.9 22.1 22.1 22.1 12.2 0 22.1-9.9 22.1-22.1 0-2.828-.532-5.533-1.502-8.019C228.686 71.842 220.672 66 211.3 66z"
-      fill-rule="nonzero"
-      stroke="#c9c9ce"
-      stroke-width=".15"
-      transform="matrix(6.78733 0 0 6.78733 -1283.663 -447.464)"
-    />
-    <path
-      d="M226.873 87.531l-93.984 125.937L84.85 165.43"
-      fill="none"
-      stroke="#050505"
-      stroke-width="14"
-      stroke-linecap="round"
-      stroke-miterlimit="1.5"
-    />
-  </svg>
+  <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path d="M150 13.555c75.302 0 136.446 61.144 136.446 136.446 0 75.3-61.143 136.445-136.445 136.445-75.302 0-136.446-61.143-136.446-136.445C12.953 74.699 74.699 13.555 150 13.555zM150 0C67.169 0 0 67.17 0 150c0 82.832 67.17 150 150 150 82.832 0 150-67.168 150-150 0-19.277-3.614-37.65-10.24-54.518C268.073 39.458 213.553 0 150 0z" fill="#49d3ff" fill-rule="nonzero"/><path d="M226.506 87.049L132.23 212.953 84.338 165.06" fill="none" stroke="#49d3ff" stroke-width="15.066320099999999"/></svg>
 );
 
 let checkpointText = (
@@ -148,43 +104,33 @@ let checkpointText = (
   </p>
 );
 
+let incompleteText = <span className="incomplete-text">Not Started</span>;
+let inProgressText = <span className="in-progress-text">In Progress</span>;
 let completeText = <span className="complete-text">Completed</span>;
 
 // VARS
 
 export class AccordionTwo extends Component {
   state = {
-    notStarted: 'Not Started',
-    inProgress: 'In Progress',
+    notStarted: incompleteText,
+    inProgress: inProgressText,
     complete: completeText,
 
-    notStarted2: 'Not Started',
-    inProgress2: 'In Progress',
-    complete2: 'Completed',
+    notStarted2: incompleteText,
+    inProgress2: inProgressText,
+    complete2: completeText,
 
-    notStarted3: 'Not Started',
-    inProgress3: 'In Progress',
-    complete3: 'Completed',
+    notStarted3: incompleteText,
+    inProgress3: inProgressText,
+    complete3: completeText,
 
-    notStarted4: 'Not Started',
-    inProgress4: 'In Progress',
-    complete4: 'Completed',
+    notStarted4: incompleteText,
+    inProgress4: inProgressText,
+    complete4: completeText,
 
-    notStarted5: 'Not Started',
-    inProgress5: 'In Progress',
-    complete5: 'Completed',
-
-    notStarted6: 'Not Started',
-    inProgress6: 'In Progress',
-    complete6: 'Completed',
-
-    notStarted7: 'Not Started',
-    inProgress7: 'In Progress',
-    complete7: 'Completed',
-
-    notStarted8: 'Not Started',
-    inProgress8: 'In Progress',
-    complete8: 'Completed',
+    notStarted5: incompleteText,
+    inProgress5: inProgressText,
+    complete5: completeText,
 
     // Checkmark Cirlces
 

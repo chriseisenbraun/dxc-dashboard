@@ -76,3 +76,9 @@ a {
 .complete-text {
   color: var(--blue-bright);
 }
+.incomplete-text {
+  color: var(--gray);
+}
+.in-progress-text {
+  color: var(--black);
+}
