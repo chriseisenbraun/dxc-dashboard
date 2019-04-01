@@ -36,6 +36,22 @@
   /* background-color: rgba(#000, #000, #000, 1); */
 }
 
+.disabled-link-1 {
+  pointer-events: none;
+}
+.disabled-link-2 {
+  pointer-events: none;
+}
+.disabled-link-3 {
+  pointer-events: none;
+}
+.disabled-link-4 {
+  pointer-events: none;
+}
+.disabled-link-5 {
+  pointer-events: none;
+}
+
 .mission-carousel__link-1 {
   font-size: 1.4rem;
   color: white;

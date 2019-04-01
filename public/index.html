@@ -65,5 +65,40 @@
       integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
       crossorigin="anonymous"
     ></script>
+    <script>
+      $(function() {
+        // m2
+        $(document).on('click', '.m2-start', function() {
+          $('.m2-stop').removeClass('disabled-link-2');
+        });
+
+        // m3
+
+        $(document).on('click', '.m3-start', function() {
+          $('.m3-stop').removeClass('disabled-link-3');
+        });
+
+        // m4
+
+        $(document).on('click', '.m4-start', function() {
+          $('.m4-stop').removeClass('disabled-link-4');
+        });
+
+        //m5
+
+        $(document).on('click', '.m5-start', function() {
+          $('.m5-stop').removeClass('disabled-link-5');
+        });
+      });
+    </script>
+
+    <!-- <script>
+      $(function() {
+        // m3
+        $('.m3-start').on('click', function() {
+          $('.m3-stop').removeClass('disabled-link-3');
+        });
+      });
+    </script> -->
   </body>
 </html>

@@ -72,25 +72,67 @@ let checkedCircle = (
   </svg>
 );
 
-
 // Status icons in Chapter row
 
 let statusNotStarted = (
-  <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M44.012 255.987c58.982 58.683 152.994 58.683 211.976 0 58.682-58.981 58.682-152.994 0-211.975-58.982-58.683-152.994-58.683-211.976 0-58.683 58.981-58.683 152.994 0 211.975zm9.88-9.88c-52.994-52.694-52.994-139.52 0-192.215 52.695-52.994 139.52-52.994 192.215 0 52.994 52.694 52.994 139.52 0 192.215-52.694 52.994-139.52 52.994-192.215 0zm38.323-47.904l48.204-48.204-48.204-48.203 9.581-9.58L150 140.418l48.203-48.204 9.581 9.58L159.581 150l48.203 48.204-9.58 9.58L150 159.58l-48.204 48.204-9.58-9.58v-.001z" fill="#b3b3b3"/></svg>
+  <svg
+    className="ep-todo-svg"
+    viewBox="0 0 300 300"
+    xmlns="http://www.w3.org/2000/svg"
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    stroke-linejoin="round"
+    stroke-miterlimit="1.414"
+  >
+    <path
+      d="M44.012 255.987c58.982 58.683 152.994 58.683 211.976 0 58.682-58.981 58.682-152.994 0-211.975-58.982-58.683-152.994-58.683-211.976 0-58.683 58.981-58.683 152.994 0 211.975zm9.88-9.88c-52.994-52.694-52.994-139.52 0-192.215 52.695-52.994 139.52-52.994 192.215 0 52.994 52.694 52.994 139.52 0 192.215-52.694 52.994-139.52 52.994-192.215 0zm38.323-47.904l48.204-48.204-48.204-48.203 9.581-9.58L150 140.418l48.203-48.204 9.581 9.58L159.581 150l48.203 48.204-9.58 9.58L150 159.58l-48.204 48.204-9.58-9.58v-.001z"
+      fill="#b3b3b3"
+    />
+  </svg>
 );
 
 let statusInProgress = (
-  <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414"><path d="M0 150c.212 83.262 66.738 149.788 150 150 83.262-.212 149.788-66.738 150-150C299.788 66.738 233.262.212 150 0 66.738.212.212 66.737 0 150zm13.983 0C13.77 75.212 75.213 13.771 150 13.983 224.788 13.77 286.229 75.212 286.017 150c.212 74.788-61.23 136.229-136.017 136.016C75.212 286.23 13.771 224.788 13.983 150zM75 143.22H225v13.56H75v-13.56z"/></svg>
+  <svg
+    className="ep-todo-svg"
+    viewBox="0 0 300 300"
+    xmlns="http://www.w3.org/2000/svg"
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    stroke-linejoin="round"
+    stroke-miterlimit="1.414"
+  >
+    <path d="M0 150c.212 83.262 66.738 149.788 150 150 83.262-.212 149.788-66.738 150-150C299.788 66.738 233.262.212 150 0 66.738.212.212 66.737 0 150zm13.983 0C13.77 75.212 75.213 13.771 150 13.983 224.788 13.77 286.229 75.212 286.017 150c.212 74.788-61.23 136.229-136.017 136.016C75.212 286.23 13.771 224.788 13.983 150zM75 143.22H225v13.56H75v-13.56z" />
+  </svg>
 );
 
 let statusComplete = (
-  <svg className="ep-todo-svg" viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg" fill-rule="evenodd" clip-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5"><path d="M150 13.555c75.302 0 136.446 61.144 136.446 136.446 0 75.3-61.143 136.445-136.445 136.445-75.302 0-136.446-61.143-136.446-136.445C12.953 74.699 74.699 13.555 150 13.555zM150 0C67.169 0 0 67.17 0 150c0 82.832 67.17 150 150 150 82.832 0 150-67.168 150-150 0-19.277-3.614-37.65-10.24-54.518C268.073 39.458 213.553 0 150 0z" fill="#49d3ff" fill-rule="nonzero"/><path d="M226.506 87.049L132.23 212.953 84.338 165.06" fill="none" stroke="#49d3ff" stroke-width="15.066320099999999"/></svg>
+  <svg
+    className="ep-todo-svg"
+    viewBox="0 0 300 300"
+    xmlns="http://www.w3.org/2000/svg"
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-miterlimit="1.5"
+  >
+    <path
+      d="M150 13.555c75.302 0 136.446 61.144 136.446 136.446 0 75.3-61.143 136.445-136.445 136.445-75.302 0-136.446-61.143-136.446-136.445C12.953 74.699 74.699 13.555 150 13.555zM150 0C67.169 0 0 67.17 0 150c0 82.832 67.17 150 150 150 82.832 0 150-67.168 150-150 0-19.277-3.614-37.65-10.24-54.518C268.073 39.458 213.553 0 150 0z"
+      fill="#49d3ff"
+      fill-rule="nonzero"
+    />
+    <path
+      d="M226.506 87.049L132.23 212.953 84.338 165.06"
+      fill="none"
+      stroke="#49d3ff"
+      stroke-width="15.066320099999999"
+    />
+  </svg>
 );
 
 let incompleteText = <span className="incomplete-text">Not Started</span>;
 let inProgressText = <span className="in-progress-text">In Progress</span>;
 let completeText = <span className="complete-text">Completed</span>;
-
 
 // END Checkpoint vars
 
@@ -1238,7 +1280,7 @@ export class AccordionThree extends Component {
                                 that look like?
                               </a>
                               <a
-                                class="list-group-item list-group-item-action"
+                                class="list-group-item list-group-item-action m4-start"
                                 id="list-m4-e3-list"
                                 data-toggle="list"
                                 href="#list-m4-e3"
@@ -1412,7 +1454,7 @@ export class AccordionThree extends Component {
                                 keeping a healthy partnership
                               </a>
                               <a
-                                class="list-group-item list-group-item-action"
+                                class="list-group-item list-group-item-action m4-start"
                                 id="list-m5-e3-list"
                                 data-toggle="list"
                                 href="#list-m5-e3"
